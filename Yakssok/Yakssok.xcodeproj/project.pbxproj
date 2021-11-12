@@ -32,6 +32,7 @@
 		92B619C3273ED4C200BE31D1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C2273ED4C200BE31D1 /* UIColor+.swift */; };
 		92B619C5273ED8B700BE31D1 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B619C4273ED8B700BE31D1 /* MyPage.storyboard */; };
 		92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C7273ED90900BE31D1 /* MyPageVC.swift */; };
+		92B619CA273EDD7A00BE31D1 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C9273EDD7A00BE31D1 /* PopUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		92B619C2273ED4C200BE31D1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		92B619C4273ED8B700BE31D1 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		92B619C7273ED90900BE31D1 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		92B619C9273EDD7A00BE31D1 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				92A04A03273DEA1600AF83C2 /* NavigationController.swift */,
 				92B619C0273ED3F700BE31D1 /* TabBarController.swift */,
+				92B619C9273EDD7A00BE31D1 /* PopUpVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */,
 				92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */,
 				92B619B2273EC53900BE31D1 /* FirstOnboardingVC.swift in Sources */,
+				92B619CA273EDD7A00BE31D1 /* PopUpVC.swift in Sources */,
 				92B619B6273EC56A00BE31D1 /* ThirdOnboardingVC.swift in Sources */,
 				92A049EF273DDD8500AF83C2 /* SqueezeNet.mlmodel in Sources */,
 			);

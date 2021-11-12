@@ -8,12 +8,12 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-
+    
     // MARK: - Life Cycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         initUI()
         setTabs()
         setMiddleTab()
@@ -69,24 +69,29 @@ extension TabBarController {
 extension TabBarController {
     func setMiddleTab() {
         let cameraTab = UIButton(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
-
+        
         var cameraTabFrame = cameraTab.frame
         cameraTabFrame.origin.y = view.bounds.height - cameraTabFrame.height - 35
         cameraTabFrame.origin.x = view.bounds.width/2 - cameraTabFrame.size.width/2
         cameraTab.frame = cameraTabFrame
-
+        
         cameraTab.backgroundColor = UIColor.mainBlue
         cameraTab.layer.cornerRadius = cameraTabFrame.height/2
         view.addSubview(cameraTab)
-
+        
         cameraTab.setImage(UIImage(systemName: "camera"), for: .normal)
         cameraTab.addTarget(self, action: #selector(touchUpCameraTab(sender:)), for: .touchUpInside)
-
+        
         view.layoutIfNeeded()
     }
     
     @objc
     private func touchUpCameraTab(sender: UIButton) {
         selectedIndex = 2
+        
+        let dvc = PopUpVC()
+        dvc.modalTransitionStyle = .coverVertical
+        dvc.modalPresentationStyle = .overCurrentContext
+        self.present(dvc, animated: true, completion: nil)
     }
 }
