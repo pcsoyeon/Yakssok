@@ -28,6 +28,10 @@
 		92B619B9273ECA2400BE31D1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B619B8273ECA2400BE31D1 /* Colors.xcassets */; };
 		92B619BB273ED10100BE31D1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619BA273ED10100BE31D1 /* MainVC.swift */; };
 		92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B619BC273ED13D00BE31D1 /* Main.storyboard */; };
+		92B619C1273ED3F700BE31D1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C0273ED3F700BE31D1 /* TabBarController.swift */; };
+		92B619C3273ED4C200BE31D1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C2273ED4C200BE31D1 /* UIColor+.swift */; };
+		92B619C5273ED8B700BE31D1 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B619C4273ED8B700BE31D1 /* MyPage.storyboard */; };
+		92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C7273ED90900BE31D1 /* MyPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		92B619B8273ECA2400BE31D1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		92B619BA273ED10100BE31D1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		92B619BC273ED13D00BE31D1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		92B619C0273ED3F700BE31D1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		92B619C2273ED4C200BE31D1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		92B619C4273ED8B700BE31D1 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		92B619C7273ED90900BE31D1 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,9 @@
 		92A049F1273DE7A800AF83C2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				92A04A03273DEA1600AF83C2 /* NavigationController.swift */,
-				92A049DD273DDD5100AF83C2 /* ViewController.swift */,
+				92B619BF273ED3D900BE31D1 /* Base */,
+				92B619BE273ED3D000BE31D1 /* Pill */,
+				92B619C6273ED8C000BE31D1 /* MyPage */,
 				92A049F9273DE80F00AF83C2 /* Main */,
 				92A049F8273DE80900AF83C2 /* Onboarding */,
 			);
@@ -126,6 +135,7 @@
 				92A049DF273DDD5100AF83C2 /* Pill.storyboard */,
 				92B619BC273ED13D00BE31D1 /* Main.storyboard */,
 				92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */,
+				92B619C4273ED8B700BE31D1 /* MyPage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 		92B619A1273EB5D400BE31D1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				92B619C2273ED4C200BE31D1 /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +193,31 @@
 				92B619A8273EBFBA00BE31D1 /* SpoqaHanSansNeo-Thin.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		92B619BE273ED3D000BE31D1 /* Pill */ = {
+			isa = PBXGroup;
+			children = (
+				92A049DD273DDD5100AF83C2 /* ViewController.swift */,
+			);
+			path = Pill;
+			sourceTree = "<group>";
+		};
+		92B619BF273ED3D900BE31D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				92A04A03273DEA1600AF83C2 /* NavigationController.swift */,
+				92B619C0273ED3F700BE31D1 /* TabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		92B619C6273ED8C000BE31D1 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				92B619C7273ED90900BE31D1 /* MyPageVC.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +285,7 @@
 				92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */,
 				92B619B9273ECA2400BE31D1 /* Colors.xcassets in Resources */,
+				92B619C5273ED8B700BE31D1 /* MyPage.storyboard in Resources */,
 				92A04A02273DE8EC00AF83C2 /* Onboarding.storyboard in Resources */,
 				92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */,
 				92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */,
@@ -265,8 +302,11 @@
 			files = (
 				92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */,
 				92B619BB273ED10100BE31D1 /* MainVC.swift in Sources */,
+				92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */,
+				92B619C1273ED3F700BE31D1 /* TabBarController.swift in Sources */,
 				92A049DE273DDD5100AF83C2 /* ViewController.swift in Sources */,
 				92A04A04273DEA1600AF83C2 /* NavigationController.swift in Sources */,
+				92B619C3273ED4C200BE31D1 /* UIColor+.swift in Sources */,
 				92B619B5273EC56A00BE31D1 /* SecondOnboardingVC.swift in Sources */,
 				92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */,
 				92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */,

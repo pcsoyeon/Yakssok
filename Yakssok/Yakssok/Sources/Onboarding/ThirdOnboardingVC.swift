@@ -29,7 +29,7 @@ class ThirdOnboardingVC: UIViewController {
     
     // MARK: - IB Actions
     @IBAction func touchUpNextButton(_ sender: Any) {
-        guard let dvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainVC") as? MainVC else { return }
+        guard let dvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
         self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
