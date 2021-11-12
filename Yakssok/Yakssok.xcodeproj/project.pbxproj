@@ -10,16 +10,24 @@
 		92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049D9273DDD5100AF83C2 /* AppDelegate.swift */; };
 		92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */; };
 		92A049DE273DDD5100AF83C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DD273DDD5100AF83C2 /* ViewController.swift */; };
-		92A049E1273DDD5100AF83C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A049DF273DDD5100AF83C2 /* Main.storyboard */; };
-		92A049E3273DDD5200AF83C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E2273DDD5200AF83C2 /* Assets.xcassets */; };
+		92A049E1273DDD5100AF83C2 /* Pill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A049DF273DDD5100AF83C2 /* Pill.storyboard */; };
+		92A049E3273DDD5200AF83C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E2273DDD5200AF83C2 /* Images.xcassets */; };
 		92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */; };
 		92A049EF273DDD8500AF83C2 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */; };
 		92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */; };
-		92A049FC273DE84700AF83C2 /* FirstOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049FB273DE84700AF83C2 /* FirstOnboardingVC.swift */; };
-		92A049FE273DE8BB00AF83C2 /* SecondOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049FD273DE8BB00AF83C2 /* SecondOnboardingVC.swift */; };
-		92A04A00273DE8CF00AF83C2 /* ThirdOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049FF273DE8CF00AF83C2 /* ThirdOnboardingVC.swift */; };
 		92A04A02273DE8EC00AF83C2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */; };
 		92A04A04273DEA1600AF83C2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A04A03273DEA1600AF83C2 /* NavigationController.swift */; };
+		92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A5273EBFBA00BE31D1 /* SpoqaHanSansNeo-Regular.otf */; };
+		92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A9273EBFBA00BE31D1 /* SpoqaHanSansNeo-Bold.otf */; };
+		92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A7273EBFBA00BE31D1 /* SpoqaHanSansNeo-Light.otf */; };
+		92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A6273EBFBA00BE31D1 /* SpoqaHanSansNeo-Medium.otf */; };
+		92B619AE273EC01400BE31D1 /* SpoqaHanSansNeo-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A8273EBFBA00BE31D1 /* SpoqaHanSansNeo-Thin.otf */; };
+		92B619B2273EC53900BE31D1 /* FirstOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619B1273EC53900BE31D1 /* FirstOnboardingVC.swift */; };
+		92B619B5273EC56A00BE31D1 /* SecondOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619B3273EC56A00BE31D1 /* SecondOnboardingVC.swift */; };
+		92B619B6273EC56A00BE31D1 /* ThirdOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619B4273EC56A00BE31D1 /* ThirdOnboardingVC.swift */; };
+		92B619B9273ECA2400BE31D1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B619B8273ECA2400BE31D1 /* Colors.xcassets */; };
+		92B619BB273ED10100BE31D1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619BA273ED10100BE31D1 /* MainVC.swift */; };
+		92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B619BC273ED13D00BE31D1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,17 +35,25 @@
 		92A049D9273DDD5100AF83C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		92A049DD273DDD5100AF83C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92A049E0273DDD5100AF83C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92A049E2273DDD5200AF83C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92A049E0273DDD5100AF83C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Pill.storyboard; sourceTree = "<group>"; };
+		92A049E2273DDD5200AF83C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		92A049E5273DDD5200AF83C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A049E7273DDD5200AF83C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
-		92A049FB273DE84700AF83C2 /* FirstOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingVC.swift; sourceTree = "<group>"; };
-		92A049FD273DE8BB00AF83C2 /* SecondOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingVC.swift; sourceTree = "<group>"; };
-		92A049FF273DE8CF00AF83C2 /* ThirdOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingVC.swift; sourceTree = "<group>"; };
 		92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		92A04A03273DEA1600AF83C2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		92B619A5273EBFBA00BE31D1 /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
+		92B619A6273EBFBA00BE31D1 /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
+		92B619A7273EBFBA00BE31D1 /* SpoqaHanSansNeo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.otf"; sourceTree = "<group>"; };
+		92B619A8273EBFBA00BE31D1 /* SpoqaHanSansNeo-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.otf"; sourceTree = "<group>"; };
+		92B619A9273EBFBA00BE31D1 /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
+		92B619B1273EC53900BE31D1 /* FirstOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingVC.swift; sourceTree = "<group>"; };
+		92B619B3273EC56A00BE31D1 /* SecondOnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondOnboardingVC.swift; sourceTree = "<group>"; };
+		92B619B4273EC56A00BE31D1 /* ThirdOnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingVC.swift; sourceTree = "<group>"; };
+		92B619B8273ECA2400BE31D1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		92B619BA273ED10100BE31D1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		92B619BC273ED13D00BE31D1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +86,10 @@
 		92A049D8273DDD5100AF83C2 /* Yakssok */ = {
 			isa = PBXGroup;
 			children = (
+				92A049E7273DDD5200AF83C2 /* Info.plist */,
 				92A049F5273DE7EA00AF83C2 /* Global */,
 				92A049F3273DE7B700AF83C2 /* Resources */,
 				92A049F1273DE7A800AF83C2 /* Sources */,
-				92A049E7273DDD5200AF83C2 /* Info.plist */,
 			);
 			path = Yakssok;
 			sourceTree = "<group>";
@@ -94,7 +110,9 @@
 			children = (
 				92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */,
 				92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */,
-				92A049E2273DDD5200AF83C2 /* Assets.xcassets */,
+				92A049E2273DDD5200AF83C2 /* Images.xcassets */,
+				92B619B8273ECA2400BE31D1 /* Colors.xcassets */,
+				92B619A4273EBFA400BE31D1 /* Fonts */,
 				92B619A1273EB5D400BE31D1 /* Extensions */,
 				92A049F4273DE7CE00AF83C2 /* Storyboards */,
 			);
@@ -105,7 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */,
-				92A049DF273DDD5100AF83C2 /* Main.storyboard */,
+				92A049DF273DDD5100AF83C2 /* Pill.storyboard */,
+				92B619BC273ED13D00BE31D1 /* Main.storyboard */,
 				92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */,
 			);
 			path = Storyboards;
@@ -131,9 +150,9 @@
 		92A049F8273DE80900AF83C2 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				92A049FB273DE84700AF83C2 /* FirstOnboardingVC.swift */,
-				92A049FD273DE8BB00AF83C2 /* SecondOnboardingVC.swift */,
-				92A049FF273DE8CF00AF83C2 /* ThirdOnboardingVC.swift */,
+				92B619B1273EC53900BE31D1 /* FirstOnboardingVC.swift */,
+				92B619B3273EC56A00BE31D1 /* SecondOnboardingVC.swift */,
+				92B619B4273EC56A00BE31D1 /* ThirdOnboardingVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -141,6 +160,7 @@
 		92A049F9273DE80F00AF83C2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				92B619BA273ED10100BE31D1 /* MainVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -150,6 +170,18 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92B619A4273EBFA400BE31D1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				92B619A9273EBFBA00BE31D1 /* SpoqaHanSansNeo-Bold.otf */,
+				92B619A7273EBFBA00BE31D1 /* SpoqaHanSansNeo-Light.otf */,
+				92B619A6273EBFBA00BE31D1 /* SpoqaHanSansNeo-Medium.otf */,
+				92B619A5273EBFBA00BE31D1 /* SpoqaHanSansNeo-Regular.otf */,
+				92B619A8273EBFBA00BE31D1 /* SpoqaHanSansNeo-Thin.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +243,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */,
-				92A049E3273DDD5200AF83C2 /* Assets.xcassets in Resources */,
-				92A049E1273DDD5100AF83C2 /* Main.storyboard in Resources */,
+				92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */,
+				92A049E3273DDD5200AF83C2 /* Images.xcassets in Resources */,
+				92A049E1273DDD5100AF83C2 /* Pill.storyboard in Resources */,
+				92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */,
+				92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */,
+				92B619B9273ECA2400BE31D1 /* Colors.xcassets in Resources */,
 				92A04A02273DE8EC00AF83C2 /* Onboarding.storyboard in Resources */,
+				92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */,
+				92B619AE273EC01400BE31D1 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,14 +263,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A049FC273DE84700AF83C2 /* FirstOnboardingVC.swift in Sources */,
-				92A04A00273DE8CF00AF83C2 /* ThirdOnboardingVC.swift in Sources */,
 				92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */,
+				92B619BB273ED10100BE31D1 /* MainVC.swift in Sources */,
 				92A049DE273DDD5100AF83C2 /* ViewController.swift in Sources */,
 				92A04A04273DEA1600AF83C2 /* NavigationController.swift in Sources */,
+				92B619B5273EC56A00BE31D1 /* SecondOnboardingVC.swift in Sources */,
 				92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */,
 				92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */,
-				92A049FE273DE8BB00AF83C2 /* SecondOnboardingVC.swift in Sources */,
+				92B619B2273EC53900BE31D1 /* FirstOnboardingVC.swift in Sources */,
+				92B619B6273EC56A00BE31D1 /* ThirdOnboardingVC.swift in Sources */,
 				92A049EF273DDD8500AF83C2 /* SqueezeNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,12 +279,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92A049DF273DDD5100AF83C2 /* Main.storyboard */ = {
+		92A049DF273DDD5100AF83C2 /* Pill.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				92A049E0273DDD5100AF83C2 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Pill.storyboard;
 			sourceTree = "<group>";
 		};
 		92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */ = {
@@ -384,9 +424,10 @@
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yakssok/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 허용해줘.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,9 +453,10 @@
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yakssok/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 허용해줘.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
