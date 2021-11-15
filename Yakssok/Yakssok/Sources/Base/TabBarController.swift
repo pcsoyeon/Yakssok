@@ -49,8 +49,9 @@ extension TabBarController {
         let mainTab = mainStoryboard.instantiateViewController(identifier: "MainVC")
         mainTab.tabBarItem = UITabBarItem(title: "메인", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
         
-        let tab = UIViewController()
-        tab.tabBarItem = UITabBarItem()
+        let storyboard = UIStoryboard.init(name: "MyPage", bundle: nil)
+        let tab = storyboard.instantiateViewController(identifier: "MyPageVC")
+        tab.tabBarItem = UITabBarItem(title: "중간", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
         
         let myStoryboard = UIStoryboard.init(name: "MyPage", bundle: nil)
         let myTab = myStoryboard.instantiateViewController(identifier: "MyPageVC")
@@ -81,8 +82,6 @@ extension TabBarController {
         
         cameraTab.setImage(UIImage(systemName: "camera"), for: .normal)
         cameraTab.addTarget(self, action: #selector(touchUpCameraTab(sender:)), for: .touchUpInside)
-        
-        view.layoutIfNeeded()
     }
     
     @objc

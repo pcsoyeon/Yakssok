@@ -17,6 +17,14 @@
 		92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */; };
 		92A04A02273DE8EC00AF83C2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */; };
 		92A04A04273DEA1600AF83C2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A04A03273DEA1600AF83C2 /* NavigationController.swift */; };
+		92B0456227422AEF0030B923 /* AgeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0456027422AEF0030B923 /* AgeTVC.swift */; };
+		92B0456327422AEF0030B923 /* AgeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B0456127422AEF0030B923 /* AgeTVC.xib */; };
+		92B0456627422B110030B923 /* AgeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0456427422B110030B923 /* AgeCVC.swift */; };
+		92B0456727422B110030B923 /* AgeCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B0456527422B110030B923 /* AgeCVC.xib */; };
+		92B0456A27422B790030B923 /* SituationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0456827422B790030B923 /* SituationTVC.swift */; };
+		92B0456B27422B790030B923 /* SituationTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B0456927422B790030B923 /* SituationTVC.xib */; };
+		92B0456E27422B8B0030B923 /* SituationCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0456C27422B8B0030B923 /* SituationCVC.swift */; };
+		92B0456F27422B8B0030B923 /* SituationCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B0456D27422B8B0030B923 /* SituationCVC.xib */; };
 		92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A5273EBFBA00BE31D1 /* SpoqaHanSansNeo-Regular.otf */; };
 		92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A9273EBFBA00BE31D1 /* SpoqaHanSansNeo-Bold.otf */; };
 		92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B619A7273EBFBA00BE31D1 /* SpoqaHanSansNeo-Light.otf */; };
@@ -48,6 +56,14 @@
 		92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		92A04A03273DEA1600AF83C2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		92B0456027422AEF0030B923 /* AgeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeTVC.swift; sourceTree = "<group>"; };
+		92B0456127422AEF0030B923 /* AgeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeTVC.xib; sourceTree = "<group>"; };
+		92B0456427422B110030B923 /* AgeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCVC.swift; sourceTree = "<group>"; };
+		92B0456527422B110030B923 /* AgeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeCVC.xib; sourceTree = "<group>"; };
+		92B0456827422B790030B923 /* SituationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationTVC.swift; sourceTree = "<group>"; };
+		92B0456927422B790030B923 /* SituationTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SituationTVC.xib; sourceTree = "<group>"; };
+		92B0456C27422B8B0030B923 /* SituationCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationCVC.swift; sourceTree = "<group>"; };
+		92B0456D27422B8B0030B923 /* SituationCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SituationCVC.xib; sourceTree = "<group>"; };
 		92B619A5273EBFBA00BE31D1 /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
 		92B619A6273EBFBA00BE31D1 /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
 		92B619A7273EBFBA00BE31D1 /* SpoqaHanSansNeo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.otf"; sourceTree = "<group>"; };
@@ -172,9 +188,49 @@
 		92A049F9273DE80F00AF83C2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				92B619BA273ED10100BE31D1 /* MainVC.swift */,
+				92B04557274229DF0030B923 /* Cells */,
+				92B04556274229DA0030B923 /* VCs */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		92B04556274229DA0030B923 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				92B619BA273ED10100BE31D1 /* MainVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		92B04557274229DF0030B923 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92B0455D27422AC00030B923 /* CVC */,
+				92B0455C27422AB90030B923 /* TVC */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92B0455C27422AB90030B923 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				92B0456027422AEF0030B923 /* AgeTVC.swift */,
+				92B0456127422AEF0030B923 /* AgeTVC.xib */,
+				92B0456827422B790030B923 /* SituationTVC.swift */,
+				92B0456927422B790030B923 /* SituationTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		92B0455D27422AC00030B923 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				92B0456427422B110030B923 /* AgeCVC.swift */,
+				92B0456527422B110030B923 /* AgeCVC.xib */,
+				92B0456C27422B8B0030B923 /* SituationCVC.swift */,
+				92B0456D27422B8B0030B923 /* SituationCVC.xib */,
+			);
+			path = CVC;
 			sourceTree = "<group>";
 		};
 		92B619A1273EB5D400BE31D1 /* Extensions */ = {
@@ -283,14 +339,18 @@
 			files = (
 				92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */,
 				92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */,
+				92B0456727422B110030B923 /* AgeCVC.xib in Resources */,
 				92A049E3273DDD5200AF83C2 /* Images.xcassets in Resources */,
 				92A049E1273DDD5100AF83C2 /* Pill.storyboard in Resources */,
+				92B0456B27422B790030B923 /* SituationTVC.xib in Resources */,
 				92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */,
 				92B619B9273ECA2400BE31D1 /* Colors.xcassets in Resources */,
 				92B619C5273ED8B700BE31D1 /* MyPage.storyboard in Resources */,
 				92A04A02273DE8EC00AF83C2 /* Onboarding.storyboard in Resources */,
+				92B0456327422AEF0030B923 /* AgeTVC.xib in Resources */,
 				92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				92B0456F27422B8B0030B923 /* SituationCVC.xib in Resources */,
 				92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				92B619AE273EC01400BE31D1 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 			);
@@ -303,12 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B0456627422B110030B923 /* AgeCVC.swift in Sources */,
 				92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */,
 				92B619BB273ED10100BE31D1 /* MainVC.swift in Sources */,
+				92B0456E27422B8B0030B923 /* SituationCVC.swift in Sources */,
 				92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */,
 				92B619C1273ED3F700BE31D1 /* TabBarController.swift in Sources */,
 				92A049DE273DDD5100AF83C2 /* ViewController.swift in Sources */,
 				92A04A04273DEA1600AF83C2 /* NavigationController.swift in Sources */,
+				92B0456A27422B790030B923 /* SituationTVC.swift in Sources */,
 				92B619C3273ED4C200BE31D1 /* UIColor+.swift in Sources */,
 				92B619B5273EC56A00BE31D1 /* SecondOnboardingVC.swift in Sources */,
 				92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */,
@@ -316,6 +379,7 @@
 				92B619B2273EC53900BE31D1 /* FirstOnboardingVC.swift in Sources */,
 				92B619CA273EDD7A00BE31D1 /* PopUpVC.swift in Sources */,
 				92B619B6273EC56A00BE31D1 /* ThirdOnboardingVC.swift in Sources */,
+				92B0456227422AEF0030B923 /* AgeTVC.swift in Sources */,
 				92A049EF273DDD8500AF83C2 /* SqueezeNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
