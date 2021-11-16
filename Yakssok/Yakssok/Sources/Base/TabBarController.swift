@@ -86,10 +86,8 @@ extension TabBarController {
     
     @objc
     private func touchUpCameraTab(sender: UIButton) {
-        selectedIndex = 2
-        
-        let dvc = PopUpVC()
-        dvc.modalTransitionStyle = .coverVertical
+        let dvc = UIStoryboard.init(name: "PopUp", bundle: nil).instantiateViewController(identifier: "NavigationController")
+        dvc.modalTransitionStyle = .crossDissolve
         dvc.modalPresentationStyle = .overCurrentContext
         self.present(dvc, animated: true, completion: nil)
     }

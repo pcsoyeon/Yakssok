@@ -14,8 +14,6 @@ class MainVC: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     // MARK: - Properties
-
-    
     
     // MARK: - Life Cycle
     
@@ -28,17 +26,24 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initUI()
         setTableView()
     }
     
 }
 
 extension MainVC {
+    private func initUI() {
+        view.backgroundColor = .mainBackground
+        mainTableView.backgroundColor = .mainBackground
+    }
+    
     private func setTableView() {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
         mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        mainTableView.separatorColor = .systemGray5
         
         mainTableView.register(UINib(nibName: AgeTVC.identifier, bundle: nil), forCellReuseIdentifier: AgeTVC.identifier)
         mainTableView.register(UINib(nibName: SituationTVC.identifier, bundle: nil), forCellReuseIdentifier: SituationTVC.identifier)
@@ -50,12 +55,13 @@ extension MainVC: UITableViewDelegate {
         if indexPath.section == 0 {
             return 304
         } else {
-            return 374
+            return 420
         }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return UIView()
+        let headerView = Bundle.main.loadNibNamed("MainHeaderView", owner: self, options: nil)?.last as! UIView
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

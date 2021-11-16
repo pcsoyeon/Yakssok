@@ -39,7 +39,6 @@ extension ThirdOnboardingVC {
         if let image = UIImage(named: "Message") {
             imageView.image = image
         }
-        imageView.contentMode = .scaleAspectFill
         
         if let image = UIImage(named: "Indicator3") {
             indicatorImageView.image = image

@@ -10,12 +10,18 @@ import UIKit
 import AVKit
 import Vision
 
-class ViewController: UIViewController {
+class PillScanVC: UIViewController {
 
     // MARK: - UI
-    
+
     @IBOutlet weak var preView: UIView!
     
+    // MARK: - Properties
+    
+    private var identifier = ""
+    private var confidence = 0.0
+    
+    let captureSession = AVCaptureSession()
     
     // MARK: - Life Cycle
     
@@ -24,6 +30,7 @@ class ViewController: UIViewController {
         
         initUI()
         setAVCapture()
+        getNotification()
     }
     
     
@@ -31,17 +38,24 @@ class ViewController: UIViewController {
 
 // MARK: - UI Methods
 
-extension ViewController {
+extension PillScanVC {
     private func initUI() {
         
+    }
+    
+    private func getNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(showMessage(_:)), name: NSNotification.Name("Pill"), object: nil)
+    }
+    @objc
+    func showMessage(_ notification: Notification) {
+        print("notification called")
     }
 }
 
 // MARK: - Capture Methods
 
-extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate  {
+extension PillScanVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
     private func setAVCapture() {
-        let captureSession = AVCaptureSession()
         captureSession.sessionPreset = .high
         
         guard let captureDevice = AVCaptureDevice.default(for: .video) else { return }
@@ -68,8 +82,17 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate  {
             guard let firstObservation = results.first else { return }
             
             print(firstObservation.identifier, firstObservation.confidence)
+            
+            if firstObservation.identifier == "pill bottle" && firstObservation.confidence > 0.8 {
+                self.captureSession.stopRunning()
+                DispatchQueue.main.async {
+                    
+                }
+                
+            }
         }
         try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
+        
     }
 }
 

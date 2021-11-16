@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dhc-72-csq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop UpVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PopUpVC" id="Y6W-OH-hqX" customClass="PopUpVC" customModule="Yakssok" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xMark" translatesAutoresizingMaskIntoConstraints="NO" id="ixh-bp-Y8L">
+                                <rect key="frame" x="175" y="797" width="64" height="64"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Selection" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-8o-YyP">
+                                <rect key="frame" x="92.5" y="721" width="229" height="51"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06r-lh-cl3">
+                                <rect key="frame" x="92" y="721" width="115" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="HzJ-zg-iZo"/>
+                                    <constraint firstAttribute="width" constant="115" id="prS-zo-Mbc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN6-d3-bbz">
+                                <rect key="frame" x="208" y="721" width="114" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="mPv-wn-dok"/>
+                                    <constraint firstAttribute="height" constant="51" id="y7f-8p-4ju"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rN6-d3-bbz" secondAttribute="trailing" constant="92" id="1D2-JM-tTA"/>
+                            <constraint firstItem="ixh-bp-Y8L" firstAttribute="top" secondItem="rN6-d3-bbz" secondAttribute="bottom" constant="25" id="FG7-gf-FYY"/>
+                            <constraint firstAttribute="bottom" secondItem="ixh-bp-Y8L" secondAttribute="bottom" constant="35" id="K73-P4-tJv"/>
+                            <constraint firstItem="06r-lh-cl3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="92" id="Pg9-Xg-NkN"/>
+                            <constraint firstItem="ixh-bp-Y8L" firstAttribute="top" secondItem="06r-lh-cl3" secondAttribute="bottom" constant="25" id="a3t-XN-5UQ"/>
+                            <constraint firstItem="ixh-bp-Y8L" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="eyR-9P-cmD"/>
+                            <constraint firstItem="SZD-8o-YyP" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ozx-zo-kex"/>
+                            <constraint firstItem="ixh-bp-Y8L" firstAttribute="top" secondItem="SZD-8o-YyP" secondAttribute="bottom" constant="25" id="sv0-Yg-SL3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gua-yd-37N"/>
+                    <connections>
+                        <outlet property="pillScanButton" destination="06r-lh-cl3" id="231-85-8o4"/>
+                        <outlet property="selectionImageView" destination="SZD-8o-YyP" id="BpD-Ep-aeH"/>
+                        <outlet property="storeScanButton" destination="rN6-d3-bbz" id="foI-Yu-XeD"/>
+                        <outlet property="xImageView" destination="ixh-bp-Y8L" id="UfE-Gb-fai"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MEG-FR-TKv">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="dhc-72-csq" customClass="NavigationController" customModule="Yakssok" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XDY-r0-Rmw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Qt9-mT-6rS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSN-R7-afS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Selection" width="229" height="51"/>
+        <image name="xMark" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o8a-sM-Ejr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pill GuideVC-->
+        <scene sceneID="L60-q0-E57">
+            <objects>
+                <viewController storyboardIdentifier="PillGuideVC" id="o8a-sM-Ejr" customClass="PillGuideVC" customModule="Yakssok" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I3S-VK-dWt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5K-b5-nzX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PillGuide" translatesAutoresizingMaskIntoConstraints="NO" id="Gjz-Zb-itm">
+                                <rect key="frame" x="75" y="164" width="329" height="370"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-Jp-KaS">
+                                <rect key="frame" x="317" y="74" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GuideLabel" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-Uv-zfN">
+                                <rect key="frame" x="61" y="632" width="292" height="110"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gqr-Sx-psb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5mp-Uv-zfN" firstAttribute="leading" secondItem="gqr-Sx-psb" secondAttribute="leading" constant="61" id="HY0-3P-At5"/>
+                            <constraint firstItem="Gjz-Zb-itm" firstAttribute="top" secondItem="gqr-Sx-psb" secondAttribute="top" constant="120" id="Ic0-0W-Yb9"/>
+                            <constraint firstItem="gqr-Sx-psb" firstAttribute="trailing" secondItem="I9R-Jp-KaS" secondAttribute="trailing" constant="30" id="P6W-DO-i2a"/>
+                            <constraint firstItem="gqr-Sx-psb" firstAttribute="bottom" secondItem="5mp-Uv-zfN" secondAttribute="bottom" constant="120" id="W4f-me-arT"/>
+                            <constraint firstItem="gqr-Sx-psb" firstAttribute="trailing" secondItem="Gjz-Zb-itm" secondAttribute="trailing" constant="10" id="XLe-Z1-mgb"/>
+                            <constraint firstItem="a5K-b5-nzX" firstAttribute="leading" secondItem="gqr-Sx-psb" secondAttribute="leading" id="aO8-QQ-xcX"/>
+                            <constraint firstItem="gqr-Sx-psb" firstAttribute="bottom" secondItem="a5K-b5-nzX" secondAttribute="bottom" id="fPD-Hp-GTl"/>
+                            <constraint firstItem="a5K-b5-nzX" firstAttribute="top" secondItem="gqr-Sx-psb" secondAttribute="top" id="q8B-Cy-h2e"/>
+                            <constraint firstItem="gqr-Sx-psb" firstAttribute="trailing" secondItem="5mp-Uv-zfN" secondAttribute="trailing" constant="61" id="qvI-Rx-eXd"/>
+                            <constraint firstItem="gqr-Sx-psb" firstAttribute="trailing" secondItem="a5K-b5-nzX" secondAttribute="trailing" id="wCQ-Ky-C5Y"/>
+                            <constraint firstItem="I9R-Jp-KaS" firstAttribute="top" secondItem="gqr-Sx-psb" secondAttribute="top" constant="30" id="z2K-i6-mj3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guideImageView" destination="5mp-Uv-zfN" id="y7g-OS-ork"/>
+                        <outlet property="preView" destination="a5K-b5-nzX" id="NZl-9j-6kV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qe7-cq-bzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720.28985507246387" y="97.767857142857139"/>
+        </scene>
+        <!--Pill ScanVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PillScanVC" id="Y6W-OH-hqX" customClass="PillScanVC" customModule="Yakssok" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORJ-bB-aD6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ORJ-bB-aD6" secondAttribute="bottom" id="d6Q-qJ-IV8"/>
+                            <constraint firstItem="ORJ-bB-aD6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jyW-Lo-eNH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ORJ-bB-aD6" secondAttribute="trailing" id="nIt-X9-SDd"/>
+                            <constraint firstItem="ORJ-bB-aD6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yMm-SP-rie"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="preView" destination="ORJ-bB-aD6" id="q2m-PT-vBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GuideLabel" width="333.5" height="110"/>
+        <image name="PillGuide" width="329" height="370"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
