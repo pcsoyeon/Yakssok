@@ -15,9 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWB-rd-8gl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="66"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="LFh-0J-qCu"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wVX-mG-YiF">
+                                <rect key="frame" x="0.0" y="110" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hWB-rd-8gl" secondAttribute="trailing" id="IeU-Jh-5o7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wVX-mG-YiF" secondAttribute="trailing" id="T2E-VY-DzS"/>
+                            <constraint firstItem="hWB-rd-8gl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TMG-lH-P40"/>
+                            <constraint firstItem="hWB-rd-8gl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ywe-Je-MyX"/>
+                            <constraint firstItem="wVX-mG-YiF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aHC-Ph-ocd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wVX-mG-YiF" secondAttribute="bottom" id="g3v-yO-I7k"/>
+                            <constraint firstItem="wVX-mG-YiF" firstAttribute="top" secondItem="hWB-rd-8gl" secondAttribute="bottom" id="lqM-IF-vsf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customNavigationView" destination="hWB-rd-8gl" id="Zoy-09-bbR"/>
+                        <outlet property="myTableView" destination="wVX-mG-YiF" id="SWX-RC-ZfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
