@@ -47,7 +47,7 @@ extension TabBarController {
     private func setTabs() {
         let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
         let mainTab = mainStoryboard.instantiateViewController(identifier: "MainVC")
-        mainTab.tabBarItem = UITabBarItem(title: "메인", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
+        mainTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
         
         let storyboard = UIStoryboard.init(name: "MyPage", bundle: nil)
         let tab = storyboard.instantiateViewController(identifier: "MyPageVC")
@@ -55,7 +55,7 @@ extension TabBarController {
         
         let myStoryboard = UIStoryboard.init(name: "MyPage", bundle: nil)
         let myTab = myStoryboard.instantiateViewController(identifier: "MyPageVC")
-        myTab.tabBarItem = UITabBarItem(title: "마이페이지", image: UIImage(named: "person"), selectedImage: UIImage(named: "person"))
+        myTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "Mypage"), selectedImage: UIImage(named: "Mypage"))
         
         let tabs =  [mainTab, tab, myTab]
         
@@ -80,7 +80,7 @@ extension TabBarController {
         cameraTab.layer.cornerRadius = cameraTabFrame.height/2
         view.addSubview(cameraTab)
         
-        cameraTab.setImage(UIImage(systemName: "camera"), for: .normal)
+        cameraTab.setImage(UIImage(named: "Camera"), for: .normal)
         cameraTab.addTarget(self, action: #selector(touchUpCameraTab(sender:)), for: .touchUpInside)
     }
     

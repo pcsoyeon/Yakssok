@@ -10,7 +10,7 @@
 		92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049D9273DDD5100AF83C2 /* AppDelegate.swift */; };
 		92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */; };
 		92A049DE273DDD5100AF83C2 /* PillScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DD273DDD5100AF83C2 /* PillScanVC.swift */; };
-		92A049E3273DDD5200AF83C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E2273DDD5200AF83C2 /* Images.xcassets */; };
+		92A049E3273DDD5200AF83C2 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E2273DDD5200AF83C2 /* Icon.xcassets */; };
 		92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */; };
 		92A049EF273DDD8500AF83C2 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */; };
 		92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */; };
@@ -61,7 +61,7 @@
 		92A049D9273DDD5100AF83C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		92A049DD273DDD5100AF83C2 /* PillScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillScanVC.swift; sourceTree = "<group>"; };
-		92A049E2273DDD5200AF83C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		92A049E2273DDD5200AF83C2 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
 		92A049E5273DDD5200AF83C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A049E7273DDD5200AF83C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 				92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */,
 				92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */,
 				92B619B8273ECA2400BE31D1 /* Colors.xcassets */,
-				92A049E2273DDD5200AF83C2 /* Images.xcassets */,
+				92A049E2273DDD5200AF83C2 /* Icon.xcassets */,
 				92D36B2A27466BA50064B59E /* Indicator.xcassets */,
 				92D36B2C27466BC40064B59E /* Guide.xcassets */,
 				92D36B2E27466C130064B59E /* ProductImage.xcassets */,
@@ -421,7 +421,7 @@
 				92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				92B0456727422B110030B923 /* AgeCVC.xib in Resources */,
 				92D36B2D27466BC40064B59E /* Guide.xcassets in Resources */,
-				92A049E3273DDD5200AF83C2 /* Images.xcassets in Resources */,
+				92A049E3273DDD5200AF83C2 /* Icon.xcassets in Resources */,
 				92B0456B27422B790030B923 /* SituationTVC.xib in Resources */,
 				92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */,
