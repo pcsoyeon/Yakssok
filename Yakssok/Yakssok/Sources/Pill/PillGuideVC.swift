@@ -29,6 +29,12 @@ class PillGuideVC: UIViewController {
         setGestures()
         setAVCapture()
     }
+    
+    // MARK: IB Action
+    
+    @IBAction func touchUpXbutton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 // MARK: - Custom Methods

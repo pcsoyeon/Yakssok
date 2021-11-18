@@ -26,6 +26,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpXbutton:" destination="o8a-sM-Ejr" eventType="touchUpInside" id="D5I-ND-5DR"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dialog" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-Uv-zfN">
                                 <rect key="frame" x="40.5" y="586" width="333.5" height="110"/>
@@ -71,6 +74,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpXbutton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QA1-Gs-kBP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiB-8J-Civ">
                                 <rect key="frame" x="91" y="753" width="232" height="54"/>
@@ -118,6 +124,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ellipseView" destination="zzH-mq-kev" id="jnx-Zy-lBg"/>
                         <outlet property="preView" destination="ORJ-bB-aD6" id="q2m-PT-vBW"/>
                     </connections>
                 </viewController>
@@ -143,6 +150,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpXbutton:" destination="ScS-zb-ZDj" eventType="touchUpInside" id="p1A-ht-xM4"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dialog" translatesAutoresizingMaskIntoConstraints="NO" id="UB5-8A-FLu">
                                 <rect key="frame" x="40.5" y="586" width="333.5" height="110"/>

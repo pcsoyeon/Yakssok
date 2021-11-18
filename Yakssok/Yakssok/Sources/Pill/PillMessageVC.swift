@@ -30,6 +30,9 @@ class PillMessageVC: UIViewController {
         setAVCapture()
     }
     
+    // MARK: - IB Action
+    
+    
     @IBAction func touchUpConfirmButton(_ sender: Any) {
         guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageDetailVC") else { return }
         dvc.modalTransitionStyle = .crossDissolve
