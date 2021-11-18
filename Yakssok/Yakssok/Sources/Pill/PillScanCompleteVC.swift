@@ -1,8 +1,8 @@
 //
-//  PillGuideVC.swift
+//  PillScanCompleteVC.swift
 //  Yakssok
 //
-//  Created by soyeon on 2021/11/17.
+//  Created by soyeon on 2021/11/18.
 //
 
 import UIKit
@@ -10,8 +10,8 @@ import UIKit
 import AVKit
 import Vision
 
-class PillGuideVC: UIViewController {
-    
+class PillScanCompleteVC: UIViewController {
+
     // MARK: - UI
     
     @IBOutlet weak var preView: UIView!
@@ -29,11 +29,12 @@ class PillGuideVC: UIViewController {
         setGestures()
         setAVCapture()
     }
+    
 }
 
 // MARK: - Custom Methods
 
-extension PillGuideVC {
+extension PillScanCompleteVC {
     private func setGestures() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchUpDialogImage))
         dialogImageView.addGestureRecognizer(tapGesture)
@@ -42,7 +43,7 @@ extension PillGuideVC {
     
     @objc
     func touchUpDialogImage() {
-        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanVC") else { return }
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageVC") else { return }
         dvc.modalTransitionStyle = .crossDissolve
         dvc.modalPresentationStyle = .fullScreen
         present(dvc, animated: true, completion: nil)
@@ -51,7 +52,7 @@ extension PillGuideVC {
 
 // MARK: - Capture Methods
 
-extension PillGuideVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
+extension PillScanCompleteVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
     private func setAVCapture() {
         captureSession.sessionPreset = .high
         
@@ -66,5 +67,3 @@ extension PillGuideVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
         previewLayer.frame = preView.bounds
     }
 }
-
-

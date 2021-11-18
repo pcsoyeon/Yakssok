@@ -39,6 +39,12 @@
 		92B619C5273ED8B700BE31D1 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B619C4273ED8B700BE31D1 /* MyPage.storyboard */; };
 		92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C7273ED90900BE31D1 /* MyPageVC.swift */; };
 		92B619CA273EDD7A00BE31D1 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C9273EDD7A00BE31D1 /* PopUpVC.swift */; };
+		92D36B2B27466BA50064B59E /* Indicator.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B2A27466BA50064B59E /* Indicator.xcassets */; };
+		92D36B2D27466BC40064B59E /* Guide.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B2C27466BC40064B59E /* Guide.xcassets */; };
+		92D36B2F27466C130064B59E /* ProductImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B2E27466C130064B59E /* ProductImage.xcassets */; };
+		92D36B3127466C610064B59E /* PillScanCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B3027466C610064B59E /* PillScanCompleteVC.swift */; };
+		92D36B33274670090064B59E /* PillMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B32274670090064B59E /* PillMessageVC.swift */; };
+		92D36B35274675210064B59E /* PillMessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B34274675210064B59E /* PillMessageDetailVC.swift */; };
 		92D98601274400A1008BEE06 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D98600274400A1008BEE06 /* UIButton+.swift */; };
 		92D9860427440CD8008BEE06 /* ProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9860327440CD8008BEE06 /* ProductDataModel.swift */; };
 		92D9860727441261008BEE06 /* ProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9860527441261008BEE06 /* ProductTVC.swift */; };
@@ -85,6 +91,12 @@
 		92B619C4273ED8B700BE31D1 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		92B619C7273ED90900BE31D1 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		92B619C9273EDD7A00BE31D1 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
+		92D36B2A27466BA50064B59E /* Indicator.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Indicator.xcassets; sourceTree = "<group>"; };
+		92D36B2C27466BC40064B59E /* Guide.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Guide.xcassets; sourceTree = "<group>"; };
+		92D36B2E27466C130064B59E /* ProductImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProductImage.xcassets; sourceTree = "<group>"; };
+		92D36B3027466C610064B59E /* PillScanCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillScanCompleteVC.swift; sourceTree = "<group>"; };
+		92D36B32274670090064B59E /* PillMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillMessageVC.swift; sourceTree = "<group>"; };
+		92D36B34274675210064B59E /* PillMessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillMessageDetailVC.swift; sourceTree = "<group>"; };
 		92D98600274400A1008BEE06 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		92D9860327440CD8008BEE06 /* ProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataModel.swift; sourceTree = "<group>"; };
 		92D9860527441261008BEE06 /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
@@ -153,8 +165,11 @@
 			children = (
 				92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */,
 				92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */,
-				92A049E2273DDD5200AF83C2 /* Images.xcassets */,
 				92B619B8273ECA2400BE31D1 /* Colors.xcassets */,
+				92A049E2273DDD5200AF83C2 /* Images.xcassets */,
+				92D36B2A27466BA50064B59E /* Indicator.xcassets */,
+				92D36B2C27466BC40064B59E /* Guide.xcassets */,
+				92D36B2E27466C130064B59E /* ProductImage.xcassets */,
 				92B619A4273EBFA400BE31D1 /* Fonts */,
 				92B619A1273EB5D400BE31D1 /* Extensions */,
 				92A049F4273DE7CE00AF83C2 /* Storyboards */,
@@ -283,8 +298,11 @@
 		92B619BE273ED3D000BE31D1 /* Pill */ = {
 			isa = PBXGroup;
 			children = (
-				92A049DD273DDD5100AF83C2 /* PillScanVC.swift */,
 				92F3ED43274433B800231282 /* PillGuideVC.swift */,
+				92A049DD273DDD5100AF83C2 /* PillScanVC.swift */,
+				92D36B3027466C610064B59E /* PillScanCompleteVC.swift */,
+				92D36B32274670090064B59E /* PillMessageVC.swift */,
+				92D36B34274675210064B59E /* PillMessageDetailVC.swift */,
 			);
 			path = Pill;
 			sourceTree = "<group>";
@@ -402,6 +420,7 @@
 				92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */,
 				92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				92B0456727422B110030B923 /* AgeCVC.xib in Resources */,
+				92D36B2D27466BC40064B59E /* Guide.xcassets in Resources */,
 				92A049E3273DDD5200AF83C2 /* Images.xcassets in Resources */,
 				92B0456B27422B790030B923 /* SituationTVC.xib in Resources */,
 				92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */,
@@ -412,7 +431,9 @@
 				92D9860E27441BD0008BEE06 /* MainHeaderView.xib in Resources */,
 				92B0456327422AEF0030B923 /* AgeTVC.xib in Resources */,
 				92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				92D36B2F27466C130064B59E /* ProductImage.xcassets in Resources */,
 				92D9860827441261008BEE06 /* ProductTVC.xib in Resources */,
+				92D36B2B27466BA50064B59E /* Indicator.xcassets in Resources */,
 				92D986122744229A008BEE06 /* Pill.storyboard in Resources */,
 				92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				92B619AE273EC01400BE31D1 /* SpoqaHanSansNeo-Thin.otf in Resources */,
@@ -429,8 +450,11 @@
 				92B0456627422B110030B923 /* AgeCVC.swift in Sources */,
 				92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */,
 				92B619BB273ED10100BE31D1 /* MainVC.swift in Sources */,
+				92D36B3127466C610064B59E /* PillScanCompleteVC.swift in Sources */,
+				92D36B35274675210064B59E /* PillMessageDetailVC.swift in Sources */,
 				92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */,
 				92D9860427440CD8008BEE06 /* ProductDataModel.swift in Sources */,
+				92D36B33274670090064B59E /* PillMessageVC.swift in Sources */,
 				92B619C1273ED3F700BE31D1 /* TabBarController.swift in Sources */,
 				92D9861027441BE1008BEE06 /* MainHeaderView.swift in Sources */,
 				92D98601274400A1008BEE06 /* UIButton+.swift in Sources */,

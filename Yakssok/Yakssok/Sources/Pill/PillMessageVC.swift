@@ -1,8 +1,8 @@
 //
-//  PillGuideVC.swift
+//  PillMessageVC.swift
 //  Yakssok
 //
-//  Created by soyeon on 2021/11/17.
+//  Created by soyeon on 2021/11/18.
 //
 
 import UIKit
@@ -10,12 +10,12 @@ import UIKit
 import AVKit
 import Vision
 
-class PillGuideVC: UIViewController {
+class PillMessageVC: UIViewController {
     
     // MARK: - UI
     
     @IBOutlet weak var preView: UIView!
-    @IBOutlet weak var dialogImageView: UIImageView!
+    @IBOutlet weak var confirmButton: UIButton!
     
     // MARK: - Properties
     
@@ -26,32 +26,30 @@ class PillGuideVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setGestures()
+        initUI()
         setAVCapture()
     }
-}
-
-// MARK: - Custom Methods
-
-extension PillGuideVC {
-    private func setGestures() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchUpDialogImage))
-        dialogImageView.addGestureRecognizer(tapGesture)
-        dialogImageView.isUserInteractionEnabled = true
-    }
     
-    @objc
-    func touchUpDialogImage() {
-        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanVC") else { return }
+    @IBAction func touchUpConfirmButton(_ sender: Any) {
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageDetailVC") else { return }
         dvc.modalTransitionStyle = .crossDissolve
         dvc.modalPresentationStyle = .fullScreen
         present(dvc, animated: true, completion: nil)
     }
 }
 
+// MARK: - Custom Methods
+
+extension PillMessageVC {
+    private func initUI() {
+        confirmButton.layer.cornerRadius = 30
+        confirmButton.layer.masksToBounds = true
+    }
+}
+
 // MARK: - Capture Methods
 
-extension PillGuideVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
+extension PillMessageVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
     private func setAVCapture() {
         captureSession.sessionPreset = .high
         
@@ -66,5 +64,3 @@ extension PillGuideVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
         previewLayer.frame = preView.bounds
     }
 }
-
-

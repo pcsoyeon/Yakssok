@@ -28,27 +28,7 @@ class PillScanVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initUI()
         setAVCapture()
-        getNotification()
-    }
-    
-    
-}
-
-// MARK: - UI Methods
-
-extension PillScanVC {
-    private func initUI() {
-        
-    }
-    
-    private func getNotification() {
-        NotificationCenter.default.addObserver(self, selector: #selector(showMessage(_:)), name: NSNotification.Name("Pill"), object: nil)
-    }
-    @objc
-    func showMessage(_ notification: Notification) {
-        print("notification called")
     }
 }
 
@@ -83,10 +63,13 @@ extension PillScanVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
             
             print(firstObservation.identifier, firstObservation.confidence)
             
-            if firstObservation.identifier == "pill bottle" && firstObservation.confidence > 0.8 {
+            if firstObservation.identifier == "pill bottle" && firstObservation.confidence > 0.3 {
                 self.captureSession.stopRunning()
                 DispatchQueue.main.async {
-                    
+                    guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanCompleteVC") else { return }
+                    dvc.modalTransitionStyle = .crossDissolve
+                    dvc.modalPresentationStyle = .fullScreen
+                    self.present(dvc, animated: true, completion: nil)
                 }
                 
             }
