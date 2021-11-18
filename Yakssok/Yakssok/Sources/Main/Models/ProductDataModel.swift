@@ -8,6 +8,7 @@
 import Foundation
 
 struct ProductDataModel {
+    var productImage: String
     var productName: String
     var description: String
     var ranking: Double

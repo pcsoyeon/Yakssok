@@ -44,15 +44,6 @@ class SecondOnboardingVC: UIViewController {
 
 extension SecondOnboardingVC {
     private func setUI() {
-        if let image = UIImage(named: "Guide") {
-            imageView.image = image
-        }
-        imageView.contentMode = .scaleAspectFill
-        
-        if let image = UIImage(named: "Indicator2") {
-            indicatorImageView.image = image
-        }
-        
         nextButton.layer.cornerRadius = 25
         nextButton.layer.masksToBounds = true
     }

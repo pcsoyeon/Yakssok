@@ -21,6 +21,12 @@ class FirstOnboardingVC: UIViewController {
     
     // MARK: - Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,15 +44,6 @@ class FirstOnboardingVC: UIViewController {
 
 extension FirstOnboardingVC {
     private func setUI() {
-        if let image = UIImage(named: "Character") {
-            imageView.image = image
-        }
-        imageView.contentMode = .scaleAspectFill
-        
-        if let image = UIImage(named: "Indicator1") {
-            indicatorImageView.image = image
-        }
-        
         nextButton.layer.cornerRadius = 25
         nextButton.layer.masksToBounds = true
     }

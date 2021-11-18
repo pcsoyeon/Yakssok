@@ -19,13 +19,13 @@ class CustomNavigationBar: UIView {
     
     var titleImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "Logo")
+        imageView.image = UIImage(named: "logo")
         return imageView
     }()
     
     let separatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemGray5
+        view.backgroundColor = .systemGray4
         return view
     }()
     

@@ -30,7 +30,7 @@
                                     <action selector="touchUpXbutton:" destination="o8a-sM-Ejr" eventType="touchUpInside" id="D5I-ND-5DR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dialog" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-Uv-zfN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dialog" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-Uv-zfN">
                                 <rect key="frame" x="40.5" y="586" width="333.5" height="110"/>
                             </imageView>
                         </subviews>
@@ -91,7 +91,7 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchGuide" translatesAutoresizingMaskIntoConstraints="NO" id="lOv-L2-P8A">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchGuide" translatesAutoresizingMaskIntoConstraints="NO" id="lOv-L2-P8A">
                                 <rect key="frame" x="65.5" y="120" width="283" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="6UL-Nx-vjH"/>
@@ -154,7 +154,7 @@
                                     <action selector="touchUpXbutton:" destination="ScS-zb-ZDj" eventType="touchUpInside" id="p1A-ht-xM4"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dialog" translatesAutoresizingMaskIntoConstraints="NO" id="UB5-8A-FLu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dialog" translatesAutoresizingMaskIntoConstraints="NO" id="UB5-8A-FLu">
                                 <rect key="frame" x="40.5" y="586" width="333.5" height="110"/>
                             </imageView>
                         </subviews>
@@ -212,11 +212,11 @@
                                     <action selector="touchUpConfirmButton:" destination="Gx8-Lp-c7f" eventType="touchUpInside" id="bTT-v2-th5"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MessageAlert" translatesAutoresizingMaskIntoConstraints="NO" id="843-ro-nah">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messageAlert" translatesAutoresizingMaskIntoConstraints="NO" id="843-ro-nah">
                                 <rect key="frame" x="69" y="152" width="276" height="45"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Message" translatesAutoresizingMaskIntoConstraints="NO" id="P7g-gg-csV">
-                                <rect key="frame" x="94.5" y="283" width="225" height="133.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboardingMsg" translatesAutoresizingMaskIntoConstraints="NO" id="P7g-gg-csV">
+                                <rect key="frame" x="74.5" y="283" width="265" height="157.5"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qT-IO-mWa"/>
@@ -264,11 +264,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Dialog" width="333.5" height="110"/>
         <image name="Ellipse" width="297" height="221"/>
-        <image name="Message" width="225" height="133.5"/>
-        <image name="MessageAlert" width="276" height="45"/>
-        <image name="SearchGuide" width="283" height="44"/>
+        <image name="dialog" width="333.5" height="110"/>
+        <image name="messageAlert" width="276" height="45"/>
+        <image name="onboardingMsg" width="265" height="157.5"/>
+        <image name="searchGuide" width="283" height="44"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

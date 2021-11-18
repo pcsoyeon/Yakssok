@@ -12,6 +12,7 @@ class AgeCVC: UICollectionViewCell {
     
     // MARK: - UI
     
+    @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -34,7 +35,8 @@ extension AgeCVC {
 }
 
 extension AgeCVC {
-    func initCell(productName: String, description: String) {
+    func initCell(productImage: String, productName: String, description: String) {
+        productImageView.image = UIImage(named: productImage)
         productNameLabel.text = productName
         descriptionLabel.text = description
     }

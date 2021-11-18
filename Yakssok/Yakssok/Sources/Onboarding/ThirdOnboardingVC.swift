@@ -44,14 +44,6 @@ class ThirdOnboardingVC: UIViewController {
 
 extension ThirdOnboardingVC {
     private func setUI() {
-        if let image = UIImage(named: "Message") {
-            imageView.image = image
-        }
-        
-        if let image = UIImage(named: "Indicator3") {
-            indicatorImageView.image = image
-        }
-        
         nextButton.layer.cornerRadius = 25
         nextButton.layer.masksToBounds = true
     }

@@ -45,9 +45,9 @@ extension SituationTVC {
     
     private func setData() {
         productList.append(contentsOf: [
-            ProductDataModel(productName: "블랙모어스", description: "프로바이오틱스", ranking: 4.5),
-            ProductDataModel(productName: "오쏘몰이뮨", description: "멀티비타민", ranking: 2.5),
-            ProductDataModel(productName: "블랙모어스", description: "프로바이오틱스", ranking: 3.7)
+            ProductDataModel(productImage: "product1", productName: "듀오락 바이탈리티", description: "일반 유산균", ranking: 4.5),
+            ProductDataModel(productImage: "product2", productName: "세노비스 바이오틱스", description: "일반 유산균", ranking: 2.5),
+            ProductDataModel(productImage: "product3", productName: "블랙모어스", description: "프로바이오틱스", ranking: 3.7)
         ])
     }
     
@@ -74,7 +74,7 @@ extension SituationTVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProductTVC.identifier) as? ProductTVC else { return UITableViewCell() }
-        cell.initCell(productName: productList[indexPath.row].productName, description: productList[indexPath.row].description, ranking: productList[indexPath.row].ranking)
+        cell.initCell(productImage: productList[indexPath.row].productImage, productName: productList[indexPath.row].productName, description: productList[indexPath.row].description, ranking: productList[indexPath.row].ranking)
         return cell
     }
 }

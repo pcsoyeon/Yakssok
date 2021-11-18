@@ -31,7 +31,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kY-be-wIR">
                         <rect key="frame" x="3" y="3" width="309" height="98"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Product2" translatesAutoresizingMaskIntoConstraints="NO" id="46A-fn-l9I">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product5" translatesAutoresizingMaskIntoConstraints="NO" id="46A-fn-l9I">
                                 <rect key="frame" x="11" y="6.5" width="112" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="9le-f5-xnS"/>
@@ -50,7 +50,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="jzQ-Gg-hOJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="jzQ-Gg-hOJ">
                                 <rect key="frame" x="143" y="70.5" width="16" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-gO-0Nd">
@@ -86,6 +86,7 @@
             <connections>
                 <outlet property="backView" destination="3kY-be-wIR" id="8DF-5h-Fe0"/>
                 <outlet property="descriptionLabel" destination="vI3-RO-fqy" id="cTQ-gj-oJt"/>
+                <outlet property="productImageView" destination="46A-fn-l9I" id="pg3-dn-5K5"/>
                 <outlet property="productNameLabel" destination="17g-9b-NDb" id="jpj-2v-brq"/>
                 <outlet property="rankingLabel" destination="fTc-gO-0Nd" id="YWX-hi-Y4e"/>
             </connections>
@@ -93,8 +94,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Product2" width="112" height="85"/>
-        <image name="Star" width="16" height="16"/>
+        <image name="product5" width="84" height="65"/>
+        <image name="star" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

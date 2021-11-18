@@ -47,15 +47,15 @@ extension TabBarController {
     private func setTabs() {
         let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
         let mainTab = mainStoryboard.instantiateViewController(identifier: "MainVC")
-        mainTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "Main"), selectedImage: UIImage(named: "Main"))
+        mainTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "main"), selectedImage: UIImage(named: "main"))
         
         let storyboard = UIStoryboard.init(name: "MyPage", bundle: nil)
         let tab = storyboard.instantiateViewController(identifier: "MyPageVC")
-        tab.tabBarItem = UITabBarItem(title: "중간", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
+        tab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "main"), selectedImage: UIImage(named: "main"))
         
         let myStoryboard = UIStoryboard.init(name: "MyPage", bundle: nil)
         let myTab = myStoryboard.instantiateViewController(identifier: "MyPageVC")
-        myTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "Mypage"), selectedImage: UIImage(named: "Mypage"))
+        myTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "mypage"), selectedImage: UIImage(named: "mypage"))
         
         let tabs =  [mainTab, tab, myTab]
         
@@ -80,7 +80,7 @@ extension TabBarController {
         cameraTab.layer.cornerRadius = cameraTabFrame.height/2
         view.addSubview(cameraTab)
         
-        cameraTab.setImage(UIImage(named: "Camera"), for: .normal)
+        cameraTab.setImage(UIImage(named: "camera"), for: .normal)
         cameraTab.addTarget(self, action: #selector(touchUpCameraTab(sender:)), for: .touchUpInside)
     }
     

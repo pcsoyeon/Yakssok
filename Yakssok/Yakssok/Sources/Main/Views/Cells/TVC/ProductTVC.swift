@@ -14,6 +14,7 @@ class ProductTVC: UITableViewCell {
     
     @IBOutlet weak var backView: UIView!
     
+    @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var rankingLabel: UILabel!
@@ -41,7 +42,8 @@ extension ProductTVC {
 }
 
 extension ProductTVC {
-    func initCell(productName: String, description: String, ranking: Double) {
+    func initCell(productImage: String, productName: String, description: String, ranking: Double) {
+        productImageView.image = UIImage(named: productImage)
         productNameLabel.text = productName
         descriptionLabel.text = description
         rankingLabel.text = "\(ranking)"

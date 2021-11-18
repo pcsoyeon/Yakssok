@@ -55,9 +55,9 @@ extension AgeTVC {
     
     private func setData() {
         productList.append(contentsOf: [
-            ProductDataModel(productName: "블랙모어스", description: "프로바이오틱스", ranking: 0),
-            ProductDataModel(productName: "오쏘몰이뮨", description: "멀티비타민", ranking: 0),
-            ProductDataModel(productName: "블랙모어스", description: "프로바이오틱스", ranking: 0)
+            ProductDataModel(productImage: "product1", productName: "듀오락 바이탈리티", description: "일반 유산균", ranking: 4.5),
+            ProductDataModel(productImage: "product2", productName: "세노비스 바이오틱스", description: "일반 유산균", ranking: 2.5),
+            ProductDataModel(productImage: "product3", productName: "블랙모어스", description: "프로바이오틱스", ranking: 3.7)
         ])
     }
 }
@@ -89,7 +89,7 @@ extension AgeTVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AgeCVC.identifier, for: indexPath) as? AgeCVC else { return UICollectionViewCell() }
-        cell.initCell(productName: productList[indexPath.row].productName, description: productList[indexPath.row].description)
+        cell.initCell(productImage: productList[indexPath.row].productImage, productName: productList[indexPath.row].productName, description: productList[indexPath.row].description)
         return cell
     }
 }
