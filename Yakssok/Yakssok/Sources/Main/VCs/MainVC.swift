@@ -74,6 +74,11 @@ extension MainVC: UITableViewDelegate {
             return 0
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dvc = UIStoryboard(name: "ProductDetail", bundle: nil).instantiateViewController(withIdentifier: "ProductDetailVC")
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
 }
 
 extension MainVC: UITableViewDataSource {
