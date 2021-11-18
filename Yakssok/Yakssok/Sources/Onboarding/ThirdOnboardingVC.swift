@@ -18,6 +18,14 @@ class ThirdOnboardingVC: UIViewController {
     @IBOutlet weak var subTitleLabel: UILabel!
     
     @IBOutlet weak var nextButton: UIButton!
+    
+    // MARK: - Life Cycle
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.isHidden = true
+    }
 
     // MARK: - Life Cycle
     

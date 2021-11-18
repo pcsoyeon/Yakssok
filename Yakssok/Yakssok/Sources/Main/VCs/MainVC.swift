@@ -12,8 +12,7 @@ class MainVC: UIViewController {
     // MARK: - UI
     
     @IBOutlet weak var mainTableView: UITableView!
-    
-    // MARK: - Properties
+    @IBOutlet weak var customNavigationView: UIView!
     
     // MARK: - Life Cycle
     
@@ -35,6 +34,9 @@ class MainVC: UIViewController {
 extension MainVC {
     private func initUI() {
         view.backgroundColor = .mainBackground
+        
+        setNavigationBar(customNavigationBarView: customNavigationView, title: "", backButtonIsHidden: true)
+        
         mainTableView.backgroundColor = .mainBackground
     }
     
@@ -44,6 +46,7 @@ extension MainVC {
         
         mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         mainTableView.separatorColor = .systemGray5
+        mainTableView.showsVerticalScrollIndicator = false
         
         mainTableView.register(UINib(nibName: AgeTVC.identifier, bundle: nil), forCellReuseIdentifier: AgeTVC.identifier)
         mainTableView.register(UINib(nibName: SituationTVC.identifier, bundle: nil), forCellReuseIdentifier: SituationTVC.identifier)

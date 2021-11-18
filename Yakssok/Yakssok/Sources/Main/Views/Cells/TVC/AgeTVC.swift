@@ -48,6 +48,7 @@ extension AgeTVC {
         productCollectionView.dataSource = self
         
         productCollectionView.backgroundColor = .mainBackground
+        productCollectionView.showsHorizontalScrollIndicator = false
         
         productCollectionView.register(UINib(nibName: AgeCVC.identifier, bundle: nil), forCellWithReuseIdentifier: AgeCVC.identifier)
     }
