@@ -51,7 +51,9 @@ extension PillGuideVC {
         guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanVC") else { return }
         dvc.modalTransitionStyle = .crossDissolve
         dvc.modalPresentationStyle = .fullScreen
-        present(dvc, animated: true, completion: nil)
+        present(dvc, animated: true) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
 
