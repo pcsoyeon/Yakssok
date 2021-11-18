@@ -47,7 +47,7 @@ extension TabBarController {
     private func setTabs() {
         let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
         let mainTab = mainStoryboard.instantiateViewController(identifier: "MainVC")
-        mainTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
+        mainTab.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "Main"), selectedImage: UIImage(named: "Main"))
         
         let storyboard = UIStoryboard.init(name: "MyPage", bundle: nil)
         let tab = storyboard.instantiateViewController(identifier: "MyPageVC")

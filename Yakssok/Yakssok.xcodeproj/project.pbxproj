@@ -10,7 +10,6 @@
 		92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049D9273DDD5100AF83C2 /* AppDelegate.swift */; };
 		92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */; };
 		92A049DE273DDD5100AF83C2 /* PillScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DD273DDD5100AF83C2 /* PillScanVC.swift */; };
-		92A049E3273DDD5200AF83C2 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E2273DDD5200AF83C2 /* Icon.xcassets */; };
 		92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */; };
 		92A049EF273DDD8500AF83C2 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */; };
 		92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92A049EE273DDD8500AF83C2 /* Resnet50.mlmodel */; };
@@ -39,16 +38,16 @@
 		92B619C5273ED8B700BE31D1 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B619C4273ED8B700BE31D1 /* MyPage.storyboard */; };
 		92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C7273ED90900BE31D1 /* MyPageVC.swift */; };
 		92B619CA273EDD7A00BE31D1 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B619C9273EDD7A00BE31D1 /* PopUpVC.swift */; };
-		92D36B2B27466BA50064B59E /* Indicator.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B2A27466BA50064B59E /* Indicator.xcassets */; };
 		92D36B2D27466BC40064B59E /* Guide.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B2C27466BC40064B59E /* Guide.xcassets */; };
-		92D36B2F27466C130064B59E /* ProductImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B2E27466C130064B59E /* ProductImage.xcassets */; };
+		92D36B2F27466C130064B59E /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B2E27466C130064B59E /* Main.xcassets */; };
 		92D36B3127466C610064B59E /* PillScanCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B3027466C610064B59E /* PillScanCompleteVC.swift */; };
 		92D36B33274670090064B59E /* PillMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B32274670090064B59E /* PillMessageVC.swift */; };
 		92D36B35274675210064B59E /* PillMessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B34274675210064B59E /* PillMessageDetailVC.swift */; };
 		92D36B3727467D4C0064B59E /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B3627467D4C0064B59E /* CustomNavigationBar.swift */; };
 		92D36B3927467FFE0064B59E /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B3827467FFE0064B59E /* UIViewController+.swift */; };
 		92D36B3B274684900064B59E /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B3A274684900064B59E /* UIWindow+.swift */; };
-		92D36B3D27468A1D0064B59E /* Paticle.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B3C27468A1D0064B59E /* Paticle.xcassets */; };
+		92D36B40274690200064B59E /* Onboarding.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B3F274690200064B59E /* Onboarding.xcassets */; };
+		92D36B42274690330064B59E /* Global.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B41274690330064B59E /* Global.xcassets */; };
 		92D98601274400A1008BEE06 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D98600274400A1008BEE06 /* UIButton+.swift */; };
 		92D9860427440CD8008BEE06 /* ProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9860327440CD8008BEE06 /* ProductDataModel.swift */; };
 		92D9860727441261008BEE06 /* ProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9860527441261008BEE06 /* ProductTVC.swift */; };
@@ -65,7 +64,6 @@
 		92A049D9273DDD5100AF83C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		92A049DD273DDD5100AF83C2 /* PillScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillScanVC.swift; sourceTree = "<group>"; };
-		92A049E2273DDD5200AF83C2 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
 		92A049E5273DDD5200AF83C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A049E7273DDD5200AF83C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92A049ED273DDD8500AF83C2 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
@@ -95,16 +93,16 @@
 		92B619C4273ED8B700BE31D1 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		92B619C7273ED90900BE31D1 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		92B619C9273EDD7A00BE31D1 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
-		92D36B2A27466BA50064B59E /* Indicator.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Indicator.xcassets; sourceTree = "<group>"; };
 		92D36B2C27466BC40064B59E /* Guide.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Guide.xcassets; sourceTree = "<group>"; };
-		92D36B2E27466C130064B59E /* ProductImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProductImage.xcassets; sourceTree = "<group>"; };
+		92D36B2E27466C130064B59E /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		92D36B3027466C610064B59E /* PillScanCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillScanCompleteVC.swift; sourceTree = "<group>"; };
 		92D36B32274670090064B59E /* PillMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillMessageVC.swift; sourceTree = "<group>"; };
 		92D36B34274675210064B59E /* PillMessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillMessageDetailVC.swift; sourceTree = "<group>"; };
 		92D36B3627467D4C0064B59E /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		92D36B3827467FFE0064B59E /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		92D36B3A274684900064B59E /* UIWindow+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
-		92D36B3C27468A1D0064B59E /* Paticle.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Paticle.xcassets; sourceTree = "<group>"; };
+		92D36B3F274690200064B59E /* Onboarding.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Onboarding.xcassets; sourceTree = "<group>"; };
+		92D36B41274690330064B59E /* Global.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Global.xcassets; sourceTree = "<group>"; };
 		92D98600274400A1008BEE06 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		92D9860327440CD8008BEE06 /* ProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataModel.swift; sourceTree = "<group>"; };
 		92D9860527441261008BEE06 /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
@@ -335,11 +333,10 @@
 			isa = PBXGroup;
 			children = (
 				92B619B8273ECA2400BE31D1 /* Colors.xcassets */,
-				92A049E2273DDD5200AF83C2 /* Icon.xcassets */,
-				92D36B2A27466BA50064B59E /* Indicator.xcassets */,
 				92D36B2C27466BC40064B59E /* Guide.xcassets */,
-				92D36B2E27466C130064B59E /* ProductImage.xcassets */,
-				92D36B3C27468A1D0064B59E /* Paticle.xcassets */,
+				92D36B2E27466C130064B59E /* Main.xcassets */,
+				92D36B3F274690200064B59E /* Onboarding.xcassets */,
+				92D36B41274690330064B59E /* Global.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -440,21 +437,20 @@
 				92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */,
 				92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				92B0456727422B110030B923 /* AgeCVC.xib in Resources */,
+				92D36B42274690330064B59E /* Global.xcassets in Resources */,
 				92D36B2D27466BC40064B59E /* Guide.xcassets in Resources */,
-				92A049E3273DDD5200AF83C2 /* Icon.xcassets in Resources */,
 				92B0456B27422B790030B923 /* SituationTVC.xib in Resources */,
 				92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */,
 				92B619B9273ECA2400BE31D1 /* Colors.xcassets in Resources */,
-				92D36B3D27468A1D0064B59E /* Paticle.xcassets in Resources */,
 				92B619C5273ED8B700BE31D1 /* MyPage.storyboard in Resources */,
 				92A04A02273DE8EC00AF83C2 /* Onboarding.storyboard in Resources */,
 				92D9860E27441BD0008BEE06 /* MainHeaderView.xib in Resources */,
 				92B0456327422AEF0030B923 /* AgeTVC.xib in Resources */,
 				92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */,
-				92D36B2F27466C130064B59E /* ProductImage.xcassets in Resources */,
+				92D36B2F27466C130064B59E /* Main.xcassets in Resources */,
+				92D36B40274690200064B59E /* Onboarding.xcassets in Resources */,
 				92D9860827441261008BEE06 /* ProductTVC.xib in Resources */,
-				92D36B2B27466BA50064B59E /* Indicator.xcassets in Resources */,
 				92D986122744229A008BEE06 /* Pill.storyboard in Resources */,
 				92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				92B619AE273EC01400BE31D1 /* SpoqaHanSansNeo-Thin.otf in Resources */,
