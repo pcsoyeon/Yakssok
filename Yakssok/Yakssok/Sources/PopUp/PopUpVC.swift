@@ -37,6 +37,11 @@ class PopUpVC: UIViewController {
             self.navigationController?.pushViewController(dvc, animated: true)
         }), for: .touchUpInside)
         
+        storeScanButton.addAction(UIAction(handler: { _ in
+            let dvc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "StoreVC")
+            self.navigationController?.pushViewController(dvc, animated: true)
+        }), for: .touchUpInside)
+        
         initUI()
         setGesture()
     }

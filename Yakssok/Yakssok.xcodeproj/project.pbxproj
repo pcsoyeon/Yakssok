@@ -50,6 +50,7 @@
 		92D36B42274690330064B59E /* Global.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B41274690330064B59E /* Global.xcassets */; };
 		92D36B442746995C0064B59E /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D36B432746995C0064B59E /* ProductDetailVC.swift */; };
 		92D36B46274699910064B59E /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B45274699910064B59E /* ProductDetail.storyboard */; };
+		92D36B4C2746C07B0064B59E /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D36B4B2746C07B0064B59E /* Store.storyboard */; };
 		92D98601274400A1008BEE06 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D98600274400A1008BEE06 /* UIButton+.swift */; };
 		92D9860427440CD8008BEE06 /* ProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9860327440CD8008BEE06 /* ProductDataModel.swift */; };
 		92D9860727441261008BEE06 /* ProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9860527441261008BEE06 /* ProductTVC.swift */; };
@@ -107,6 +108,7 @@
 		92D36B41274690330064B59E /* Global.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Global.xcassets; sourceTree = "<group>"; };
 		92D36B432746995C0064B59E /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		92D36B45274699910064B59E /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
+		92D36B4B2746C07B0064B59E /* Store.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
 		92D98600274400A1008BEE06 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		92D9860327440CD8008BEE06 /* ProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataModel.swift; sourceTree = "<group>"; };
 		92D9860527441261008BEE06 /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
@@ -188,12 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */,
-				92B619BC273ED13D00BE31D1 /* Main.storyboard */,
 				92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */,
 				92B619C4273ED8B700BE31D1 /* MyPage.storyboard */,
-				92B0457327423BBC0030B923 /* PopUp.storyboard */,
-				92D986112744229A008BEE06 /* Pill.storyboard */,
-				92D36B45274699910064B59E /* ProductDetail.storyboard */,
+				92D36B4E2746C08E0064B59E /* Scan */,
+				92D36B4D2746C0830064B59E /* Main */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -379,6 +379,25 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		92D36B4D2746C0830064B59E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				92D36B45274699910064B59E /* ProductDetail.storyboard */,
+				92B619BC273ED13D00BE31D1 /* Main.storyboard */,
+				92B0457327423BBC0030B923 /* PopUp.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		92D36B4E2746C08E0064B59E /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				92D986112744229A008BEE06 /* Pill.storyboard */,
+				92D36B4B2746C07B0064B59E /* Store.storyboard */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
 		92D9860227440CC9008BEE06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +497,7 @@
 				92D36B42274690330064B59E /* Global.xcassets in Resources */,
 				92D36B2D27466BC40064B59E /* Guide.xcassets in Resources */,
 				92B0456B27422B790030B923 /* SituationTVC.xib in Resources */,
+				92D36B4C2746C07B0064B59E /* Store.storyboard in Resources */,
 				92B619AB273EC01400BE31D1 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				92B619BD273ED13D00BE31D1 /* Main.storyboard in Resources */,
 				92B619B9273ECA2400BE31D1 /* Colors.xcassets in Resources */,
