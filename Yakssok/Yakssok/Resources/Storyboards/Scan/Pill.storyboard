@@ -105,7 +105,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORJ-bB-aD6">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W13-Ik-fhU">
                                 <rect key="frame" x="353" y="94" width="41" height="31"/>
@@ -144,6 +144,14 @@
                                     <constraint firstAttribute="width" constant="295" id="tlM-hC-Dno"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvH-mf-9fd">
+                                <rect key="frame" x="157" y="412" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OmM-Zj-bFF"/>
+                                    <constraint firstAttribute="width" constant="100" id="kkE-FB-bIO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -151,9 +159,11 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="W13-Ik-fhU" secondAttribute="trailing" constant="20" id="Aay-Gw-tjI"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TiB-8J-Civ" secondAttribute="bottom" constant="55" id="BqH-BF-dyL"/>
                             <constraint firstItem="TiB-8J-Civ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="H59-Je-WkZ"/>
+                            <constraint firstItem="jvH-mf-9fd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="KKN-73-FL8"/>
                             <constraint firstItem="lOv-L2-P8A" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="MM6-vY-PF9"/>
                             <constraint firstItem="W13-Ik-fhU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="50" id="RId-qd-biA"/>
                             <constraint firstItem="lOv-L2-P8A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="76" id="Rdx-1F-z7V"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jvH-mf-9fd" secondAttribute="bottom" constant="350" id="Xhp-bz-8aL"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zzH-mq-kev" secondAttribute="bottom" constant="288" id="ZeG-Jc-7pl"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ORJ-bB-aD6" secondAttribute="bottom" id="d6Q-qJ-IV8"/>
                             <constraint firstItem="zzH-mq-kev" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="gdT-FH-gts"/>
@@ -163,13 +173,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ellipseView" destination="zzH-mq-kev" id="jnx-Zy-lBg"/>
+                        <outlet property="indicatorView" destination="jvH-mf-9fd" id="lqN-D6-G5r"/>
                         <outlet property="preView" destination="ORJ-bB-aD6" id="q2m-PT-vBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="98"/>
+            <point key="canvasLocation" x="-20" y="98"/>
         </scene>
         <!--Pill Scan CompleteVC-->
         <scene sceneID="sVv-Ue-4g9">
@@ -246,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDU-Ha-vjm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="98"/>
+            <point key="canvasLocation" x="701" y="98"/>
         </scene>
         <!--Pill MessageVC-->
         <scene sceneID="Qy8-OS-jtw">
