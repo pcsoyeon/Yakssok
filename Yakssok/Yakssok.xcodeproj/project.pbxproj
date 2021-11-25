@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9244FE6F274F8368007DF858 /* Store.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9244FE6E274F8368007DF858 /* Store.xcassets */; };
+		9244FE73274F8570007DF858 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244FE72274F8570007DF858 /* AnswerCell.swift */; };
 		92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049D9273DDD5100AF83C2 /* AppDelegate.swift */; };
 		92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */; };
 		92A049DE273DDD5100AF83C2 /* PillScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DD273DDD5100AF83C2 /* PillScanVC.swift */; };
@@ -69,6 +71,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9244FE6E274F8368007DF858 /* Store.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Store.xcassets; sourceTree = "<group>"; };
+		9244FE72274F8570007DF858 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		92A049D6273DDD5100AF83C2 /* Yakssok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yakssok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A049D9273DDD5100AF83C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9244FE6D274F7D79007DF858 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				92B619C4273ED8B700BE31D1 /* MyPage.storyboard */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		9244FE70274F8554007DF858 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				92F3ED402744283700231282 /* StoreVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		9244FE71274F855B007DF858 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9244FE72274F8570007DF858 /* AnswerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		92A049CD273DDD5100AF83C2 = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +232,7 @@
 			children = (
 				92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */,
 				92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */,
-				92B619C4273ED8B700BE31D1 /* MyPage.storyboard */,
+				9244FE6D274F7D79007DF858 /* MyPage */,
 				92D36B4E2746C08E0064B59E /* Scan */,
 				92D36B4D2746C0830064B59E /* Main */,
 			);
@@ -357,6 +385,7 @@
 				92D36B2E27466C130064B59E /* Main.xcassets */,
 				92D36B3F274690200064B59E /* Onboarding.xcassets */,
 				92D36B41274690330064B59E /* Global.xcassets */,
+				9244FE6E274F8368007DF858 /* Store.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -476,7 +505,8 @@
 		92F3ED422744284400231282 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				92F3ED402744283700231282 /* StoreVC.swift */,
+				9244FE71274F855B007DF858 /* Cells */,
+				9244FE70274F8554007DF858 /* VCs */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -547,6 +577,7 @@
 			files = (
 				92F43A3A274EB0C7006025EC /* searching.json in Resources */,
 				92B0457427423BBC0030B923 /* PopUp.storyboard in Resources */,
+				9244FE6F274F8368007DF858 /* Store.xcassets in Resources */,
 				92A049E6273DDD5200AF83C2 /* LaunchScreen.storyboard in Resources */,
 				92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				92B0456727422B110030B923 /* AgeCVC.xib in Resources */,
@@ -584,6 +615,7 @@
 				92B0456627422B110030B923 /* AgeCVC.swift in Sources */,
 				92D36B442746995C0064B59E /* ProductDetailVC.swift in Sources */,
 				92A049F0273DDD8500AF83C2 /* Resnet50.mlmodel in Sources */,
+				9244FE73274F8570007DF858 /* AnswerCell.swift in Sources */,
 				92B619BB273ED10100BE31D1 /* MainVC.swift in Sources */,
 				92D36B3727467D4C0064B59E /* CustomNavigationBar.swift in Sources */,
 				92D36B3B274684900064B59E /* UIWindow+.swift in Sources */,

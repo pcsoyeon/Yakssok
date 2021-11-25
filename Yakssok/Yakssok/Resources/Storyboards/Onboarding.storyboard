@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="300" id="MnS-PB-yla"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator1" translatesAutoresizingMaskIntoConstraints="NO" id="0f9-1t-1IW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator1" translatesAutoresizingMaskIntoConstraints="NO" id="0f9-1t-1IW">
                                 <rect key="frame" x="30" y="598" width="40" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="4fO-A7-CNm"/>
@@ -114,7 +114,7 @@
                                     <constraint firstAttribute="height" constant="115" id="e3u-PI-ffS"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator2" translatesAutoresizingMaskIntoConstraints="NO" id="qey-Iy-FqO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator2" translatesAutoresizingMaskIntoConstraints="NO" id="qey-Iy-FqO">
                                 <rect key="frame" x="30" y="556" width="40" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="KMD-qk-uea"/>
@@ -192,7 +192,7 @@
                                     <constraint firstAttribute="height" constant="157" id="x4P-Us-MEN"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator3" translatesAutoresizingMaskIntoConstraints="NO" id="NYT-y4-LGN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator3" translatesAutoresizingMaskIntoConstraints="NO" id="NYT-y4-LGN">
                                 <rect key="frame" x="30" y="556" width="40" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="9yE-GR-fsd"/>
@@ -275,11 +275,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Indicator1" width="40" height="7"/>
-        <image name="Indicator2" width="39.5" height="7"/>
-        <image name="Indicator3" width="39" height="7"/>
         <image name="character" width="300" height="300"/>
         <image name="guideImage" width="253.5" height="116"/>
+        <image name="indicator1" width="40" height="7"/>
+        <image name="indicator2" width="39.5" height="7"/>
+        <image name="indicator3" width="39" height="7"/>
         <image name="onboardingMsg" width="265" height="157.5"/>
         <namedColor name="mainBlue">
             <color red="0.45100000500679016" green="0.61599999666213989" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
