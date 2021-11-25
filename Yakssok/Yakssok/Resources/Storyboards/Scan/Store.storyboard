@@ -121,6 +121,7 @@
                         <outlet property="answerCollectionView" destination="Yb7-9X-GCZ" id="MFC-gk-3Sa"/>
                         <outlet property="customNavigationView" destination="Cxq-lu-qfE" id="W6r-Mh-l5M"/>
                         <outlet property="descriptionLabel" destination="rED-4n-Rth" id="KuZ-AA-6zt"/>
+                        <outlet property="indicatorImageView" destination="tML-XN-fbF" id="Krt-nt-sal"/>
                         <outlet property="titleLabel" destination="aWM-ww-035" id="eZI-ER-BNm"/>
                     </connections>
                 </viewController>

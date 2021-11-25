@@ -14,7 +14,6 @@ class AnswerCell: UICollectionViewCell {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .white
         label.font = .systemFont(ofSize: 14, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 2
@@ -34,6 +33,18 @@ class AnswerCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override var isSelected: Bool {
+        didSet {
+            if isSelected {
+                contentView.backgroundColor = .mainBlue
+                titleLabel.textColor = .white
+            } else {
+                contentView.backgroundColor = .systemGray5
+                titleLabel.textColor = .gray
+            }
+        }
+    }
 }
 
 extension AnswerCell {
@@ -41,7 +52,8 @@ extension AnswerCell {
         self.layer.cornerRadius = 4
         self.layer.masksToBounds = true
         
-        contentView.backgroundColor = .mainBlue
+        contentView.backgroundColor = .systemGray5
+        titleLabel.textColor = .gray
     }
     
     private func setLayout() {

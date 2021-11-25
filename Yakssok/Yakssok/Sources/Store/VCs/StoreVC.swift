@@ -13,6 +13,7 @@ class StoreVC: UIViewController {
     
     @IBOutlet weak var customNavigationView: UIView!
     @IBOutlet weak var answerCollectionView: UICollectionView!
+    @IBOutlet weak var indicatorImageView: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -20,6 +21,7 @@ class StoreVC: UIViewController {
     // MARK: - Properties
     
     private var answers = [String]()
+    private var currentIndicator = 1
     
     // MARK: - Life Cycle
     
@@ -41,11 +43,115 @@ class StoreVC: UIViewController {
     // MARK: - IB Actions
     
     @IBAction func touchUpBackButton(_ sender: Any) {
-        // collectionView reload
+        answers.removeAll()
+        
+        switch currentIndicator {
+        case 1:
+            answers.append(contentsOf: [
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "눈이\n자주 침침해",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "피부가\n건조해",
+                "목이\n칼칼해"
+            ])
+            currentIndicator = 1
+            
+        case 2:
+            answers.append(contentsOf: [
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "눈이\n자주 침침해",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "피부가\n건조해",
+                "목이\n칼칼해"
+            ])
+            currentIndicator = 1
+        case 3:
+            answers.append(contentsOf: [
+                "배가\n자주 꾸룩거려",
+                "소화가\n안되는 기분이야",
+                "손목이\n욱신거려",
+                "손목이\n욱신거려",
+                "배가\n자주 꾸룩거려",
+                "소화가\n안되는 기분이야",
+                "손목이\n욱신거려",
+                "손목이\n욱신거려",
+            ])
+            currentIndicator = 2
+        default:
+            answers.append(contentsOf: [
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "눈이\n자주 침침해",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "피부가\n건조해",
+                "목이\n칼칼해"
+            ])
+        }
+        answerCollectionView.reloadData()
+        indicatorImageView.image = UIImage(named: "indicator\(currentIndicator)")
     }
     
     @IBAction func touchUpNextButton(_ sender: Any) {
-        // colllectionView reload
+        answers.removeAll()
+        switch currentIndicator {
+        case 1:
+            answers.append(contentsOf: [
+                "배가\n자주 꾸룩거려",
+                "소화가\n안되는 기분이야",
+                "손목이\n욱신거려",
+                "손목이\n욱신거려",
+                "배가\n자주 꾸룩거려",
+                "소화가\n안되는 기분이야",
+                "손목이\n욱신거려",
+                "손목이\n욱신거려",
+            ])
+            currentIndicator = 2
+        case 2:
+            answers.append(contentsOf: [
+                "손목이\n욱신거려",
+                "소화가\n안되는 기분이야",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+                "배가\n자주 꾸룩거려",
+                "소화가\n안되는 기분이야",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+            ])
+            currentIndicator = 3
+        case 3:
+            answers.append(contentsOf: [
+                "손목이\n욱신거려",
+                "소화가\n안되는 기분이야",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+                "배가\n자주 꾸룩거려",
+                "소화가\n안되는 기분이야",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+            ])
+            currentIndicator = 3
+        default:
+            answers.append(contentsOf: [
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "눈이\n자주 침침해",
+                "배가\n자주 꾸룩거려",
+                "눈 밑이\n파르르 떨려",
+                "다리가\n자주 퉁퉁 부어",
+                "피부가\n건조해",
+                "목이\n칼칼해"
+            ])
+        }
+        answerCollectionView.reloadData()
+        indicatorImageView.image = UIImage(named: "indicator\(currentIndicator)")
     }
 }
 
@@ -60,8 +166,8 @@ extension StoreVC {
             "다리가\n자주 퉁퉁 부어",
             "눈이\n자주 침침해",
             "배가\n자주 꾸룩거려",
-            "소화가\n안되는 기분이야",
-            "손목이\n욱신거려",
+            "눈 밑이\n파르르 떨려",
+            "다리가\n자주 퉁퉁 부어",
             "피부가\n건조해",
             "목이\n칼칼해"
         ])
@@ -73,6 +179,7 @@ extension StoreVC {
         
         answerCollectionView.showsHorizontalScrollIndicator = false
         answerCollectionView.backgroundColor = .mainBackground
+        answerCollectionView.allowsMultipleSelection = true
         
         answerCollectionView.register(AnswerCell.self, forCellWithReuseIdentifier: AnswerCell.identifier)
     }
