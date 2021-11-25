@@ -23,6 +23,11 @@ class PillMessageVC: UIViewController {
     
     // MARK: - Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,12 +37,13 @@ class PillMessageVC: UIViewController {
     
     // MARK: - IB Action
     
+    @IBAction func touchUpXbutton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func touchUpConfirmButton(_ sender: Any) {
         guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageDetailVC") else { return }
-        dvc.modalTransitionStyle = .crossDissolve
-        dvc.modalPresentationStyle = .fullScreen
-        present(dvc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
 

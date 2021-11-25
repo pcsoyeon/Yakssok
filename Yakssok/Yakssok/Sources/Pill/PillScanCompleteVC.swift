@@ -30,6 +30,11 @@ class PillScanCompleteVC: UIViewController {
     
     // MARK: - Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,9 +64,7 @@ extension PillScanCompleteVC {
     @objc
     func touchUpDialogImage() {
         guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageVC") else { return }
-        dvc.modalTransitionStyle = .crossDissolve
-        dvc.modalPresentationStyle = .fullScreen
-        present(dvc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
 

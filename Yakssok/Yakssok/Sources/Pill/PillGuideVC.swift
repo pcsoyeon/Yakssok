@@ -23,6 +23,11 @@ class PillGuideVC: UIViewController {
     
     // MARK: - Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,7 +35,7 @@ class PillGuideVC: UIViewController {
         setAVCapture()
     }
     
-    // MARK: IB Action
+    // MARK: - IB Action
     
     @IBAction func touchUpXbutton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -49,11 +54,7 @@ extension PillGuideVC {
     @objc
     func touchUpDialogImage() {
         guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanVC") else { return }
-        dvc.modalTransitionStyle = .crossDissolve
-        dvc.modalPresentationStyle = .fullScreen
-        present(dvc, animated: true) {
-            self.dismiss(animated: true, completion: nil)
-        }
+        self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
 

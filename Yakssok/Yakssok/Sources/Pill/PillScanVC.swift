@@ -28,21 +28,43 @@ class PillScanVC: UIViewController {
     
     // MARK: - Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setAVCapture()
         setLottieAnimation()
+        
+        setGesture()
     }
     
     // MARK: - IB Action
     
     @IBAction func touchUpXbutton(_ sender: Any) {
-        guard let presentingVC = self.presentingViewController as? PillGuideVC else { return }
-        
-        dismiss(animated: true) {
-            presentingVC.dismiss(animated: true, completion: nil)
-        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func touchUpStopButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+// MARK: - Gesture
+
+extension PillScanVC {
+    private func setGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchUpView))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc
+    func touchUpView() {
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanCompleteVC") else { return }
+        self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
 
@@ -81,9 +103,7 @@ extension PillScanVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
 //                self.captureSession.stopRunning()
 //                DispatchQueue.main.async {
 //                    guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanCompleteVC") else { return }
-//                    dvc.modalTransitionStyle = .crossDissolve
-//                    dvc.modalPresentationStyle = .fullScreen
-//                    self.present(dvc, animated: true, completion: nil)
+//                    self.navigationController?.pushViewController(dvc, animated: true)
 //                }
 //
 //            }

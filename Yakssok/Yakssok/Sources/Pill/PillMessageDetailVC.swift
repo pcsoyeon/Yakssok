@@ -22,10 +22,19 @@ class PillMessageDetailVC: UIViewController {
     
     // MARK: - Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setAVCapture()
+    }
+    
+    @IBAction func touchUpXbutton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }
 
