@@ -36,8 +36,15 @@ class ProductTVC: UITableViewCell {
 extension ProductTVC {
     private func initUI() {
         contentView.backgroundColor = .mainBackground
+        
+        productImageView.backgroundColor = .subBlue
+        productImageView.layer.cornerRadius = 20
+        productImageView.layer.masksToBounds = true
+        
         backView.layer.cornerRadius = 20
         backView.layer.masksToBounds = true
+        backView.layer.borderColor = UIColor.systemGray5.cgColor
+        backView.layer.borderWidth = 1
     }
 }
 

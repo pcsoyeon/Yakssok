@@ -9,10 +9,15 @@ import UIKit
 
 class MyPageHeaderView: UIView {
     
+    // MARK: - UI
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     // MARK: - Initializers
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
     }
     
     override init(frame: CGRect) {

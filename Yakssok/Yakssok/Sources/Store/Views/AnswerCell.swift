@@ -39,6 +39,7 @@ class AnswerCell: UICollectionViewCell {
             if isSelected {
                 contentView.backgroundColor = .mainBlue
                 titleLabel.textColor = .white
+                NotificationCenter.default.post(name: NSNotification.Name("AnswerSelected"), object: nil)
             } else {
                 contentView.backgroundColor = .systemGray5
                 titleLabel.textColor = .gray

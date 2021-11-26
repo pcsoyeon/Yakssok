@@ -96,14 +96,14 @@ extension PillScanCompleteVC {
     private func generateConfettiEmitterCells() -> [CAEmitterCell]  {
         var cells = [CAEmitterCell]()
         
-        for index in 0..<10 {
+        for index in 0..<7 {
             let cell = CAEmitterCell()
             cell.contents = nextImage(i: index)
             
             cell.lifetime = 3
             cell.birthRate = 100
             
-            cell.scale = 0.5
+            cell.scale = 0.3
             cell.scaleRange = 1
             
             cell.spin = 5
@@ -114,7 +114,7 @@ extension PillScanCompleteVC {
             cell.velocity = 400
             cell.velocityRange = 50
             
-            cell.yAcceleration = 1200
+            cell.yAcceleration = 500
             
             cells.append(cell)
         }

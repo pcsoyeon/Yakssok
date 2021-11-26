@@ -50,6 +50,9 @@ extension MainVC {
         
         mainTableView.register(UINib(nibName: AgeTVC.identifier, bundle: nil), forCellReuseIdentifier: AgeTVC.identifier)
         mainTableView.register(UINib(nibName: SituationTVC.identifier, bundle: nil), forCellReuseIdentifier: SituationTVC.identifier)
+        
+        let headerNib = UINib(nibName: "MainHeaderView", bundle: nil)
+        mainTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "MainHeaderView")
     }
 }
 
@@ -63,8 +66,11 @@ extension MainVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = Bundle.main.loadNibNamed("MainHeaderView", owner: self, options: nil)?.last as! UIView
-        return headerView
+//        let headerView = Bundle.main.loadNibNamed("MainHeaderView", owner: self, options: nil)?.last as! UIView
+//        return headerView
+        
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MainHeaderView") as! MainHeaderView
+        return header
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

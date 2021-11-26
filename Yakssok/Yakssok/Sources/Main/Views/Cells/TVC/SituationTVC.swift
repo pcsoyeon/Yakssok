@@ -45,9 +45,9 @@ extension SituationTVC {
     
     private func setData() {
         productList.append(contentsOf: [
-            ProductDataModel(productImage: "product1", productName: "듀오락 바이탈리티", description: "일반 유산균", ranking: 4.5),
-            ProductDataModel(productImage: "product2", productName: "세노비스 바이오틱스", description: "일반 유산균", ranking: 2.5),
-            ProductDataModel(productImage: "product3", productName: "블랙모어스", description: "프로바이오틱스", ranking: 3.7)
+            ProductDataModel(productImage: "product2", productName: "듀오락 바이탈리티", description: "일반 유산균", ranking: 4.5),
+            ProductDataModel(productImage: "product5", productName: "세노비스 바이오틱스", description: "일반 유산균", ranking: 2.5),
+            ProductDataModel(productImage: "product4", productName: "블랙모어스", description: "프로바이오틱스", ranking: 3.7)
         ])
     }
     
@@ -56,6 +56,7 @@ extension SituationTVC {
         productTableView.dataSource = self
         
         productTableView.separatorStyle = .none
+        productTableView.backgroundColor = .mainBackground
         
         productTableView.register(UINib(nibName: ProductTVC.identifier, bundle: nil), forCellReuseIdentifier: ProductTVC.identifier)
     }

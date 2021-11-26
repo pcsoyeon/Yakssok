@@ -80,12 +80,15 @@
                 <constraint firstItem="QOq-7I-A1M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="76" id="bHk-Ai-cVa"/>
                 <constraint firstItem="Lg2-2b-pir" firstAttribute="centerX" secondItem="QOq-7I-A1M" secondAttribute="centerX" id="eu1-ii-DnJ"/>
             </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="WYV-0N-y6q" id="6nc-Ba-SGn"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
         </view>
     </objects>
     <resources>
         <namedColor name="mainBackground">
-            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="mainBlue">
             <color red="0.45100000500679016" green="0.61599999666213989" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -31,7 +30,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="약 정보를 검색해보세요" textAlignment="natural" minimumFontSize="17" background="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m4b-Yg-ZZ8">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="약 정보를 검색해보세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4b-Yg-ZZ8">
                     <rect key="frame" x="30" y="140" width="354" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="1Pv-Tu-dND"/>
@@ -41,7 +40,6 @@
                 </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="U2f-v9-wiT" firstAttribute="top" secondItem="Me9-Wt-pFr" secondAttribute="bottom" id="1n6-kq-zFM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="m4b-Yg-ZZ8" secondAttribute="trailing" constant="30" id="3XQ-oU-CwR"/>
@@ -51,13 +49,11 @@
                 <constraint firstItem="m4b-Yg-ZZ8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="c3N-I0-saV"/>
                 <constraint firstItem="U2f-v9-wiT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="e7Y-AD-oeZ"/>
             </constraints>
+            <connections>
+                <outlet property="searchTextField" destination="m4b-Yg-ZZ8" id="Fum-MB-AzY"/>
+                <outlet property="titleLabel" destination="U2f-v9-wiT" id="3ak-0M-tnD"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </view>
     </objects>
-    <resources>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

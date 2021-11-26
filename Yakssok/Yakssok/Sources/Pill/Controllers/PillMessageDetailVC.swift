@@ -33,7 +33,7 @@ class PillMessageDetailVC: UIViewController {
         setAVCapture()
     }
     
-    @IBAction func touchUpXbutton(_ sender: Any) {
+    @IBAction func touchUpHomeButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 }

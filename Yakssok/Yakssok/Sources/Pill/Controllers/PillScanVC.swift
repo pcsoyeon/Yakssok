@@ -44,10 +44,6 @@ class PillScanVC: UIViewController {
     
     // MARK: - IB Action
     
-    @IBAction func touchUpXbutton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func touchUpStopButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -63,7 +59,7 @@ extension PillScanVC {
     
     @objc
     func touchUpView() {
-        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanCompleteVC") else { return }
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageVC") else { return }
         self.navigationController?.pushViewController(dvc, animated: true)
     }
 }

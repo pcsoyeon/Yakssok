@@ -7,25 +7,25 @@
 
 import UIKit
 
-class MainHeaderView: UIView {
+class MainHeaderView: UITableViewHeaderFooterView {
     
-    // MARK: - Initializers 
+    // MARK: - UI
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var searchTextField: UITextField!
+    
+    // MARK: - Initializers
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
-        initUI()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-       
-        initUI()
-    }
-}
-
-extension MainHeaderView {
-    private func initUI() {
         self.backgroundColor = .mainBackground
+        self.searchTextField.setLeftPaddingPoints(10)
+        
+        guard let text = self.titleLabel.text else { return }
+        let attributeString = NSMutableAttributedString(string: text)
+        let font = UIFont.boldSystemFont(ofSize: 23)
+        attributeString.addAttribute(.font, value: font, range: (text as NSString).range(of: "쏙쏙이"))
+        self.titleLabel.attributedText = attributeString
     }
 }

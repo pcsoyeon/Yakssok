@@ -18,6 +18,8 @@ class StoreVC: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var arScanButton: UIButton!
+    
     // MARK: - Properties
     
     private var answers = [String]()
@@ -38,6 +40,7 @@ class StoreVC: UIViewController {
         initUI()
         setData()
         setCollectionView()
+        getNotification()
     }
     
     // MARK: - IB Actions
@@ -153,14 +156,21 @@ class StoreVC: UIViewController {
         answerCollectionView.reloadData()
         indicatorImageView.image = UIImage(named: "indicator\(currentIndicator)")
     }
+    
+    @IBAction func touchUpArScanButton(_ sender: Any) {
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreGuideVC") else { return }
+        self.answerCollectionView.deselectAll(animated: true)
+        self.arScanButton.setImage(UIImage(named: "btnArScan"), for: .normal)
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
 }
 
 extension StoreVC {
-    func initUI() {
+    private func initUI() {
         view.backgroundColor = .mainBackground
     }
     
-    func setData() {
+    private func setData() {
         answers.append(contentsOf: [
             "눈 밑이\n파르르 떨려",
             "다리가\n자주 퉁퉁 부어",
@@ -173,7 +183,7 @@ extension StoreVC {
         ])
     }
     
-    func setCollectionView() {
+    private func setCollectionView() {
         answerCollectionView.delegate = self
         answerCollectionView.dataSource = self
         
@@ -182,6 +192,15 @@ extension StoreVC {
         answerCollectionView.allowsMultipleSelection = true
         
         answerCollectionView.register(AnswerCell.self, forCellWithReuseIdentifier: AnswerCell.identifier)
+    }
+    
+    private func getNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didRecieveAnswerNotification(_:)), name: NSNotification.Name("AnswerSelected"), object: nil)
+    }
+    
+    @objc
+    func didRecieveAnswerNotification(_ notification: Notification) {
+        arScanButton.setImage(UIImage(named: "btnArScanActive"), for: .normal)
     }
 }
 
