@@ -39,8 +39,8 @@ extension AgeTVC {
     private func initUI() {
         contentView.backgroundColor = .mainBackground
         
-        titleLabel.text = "20대 여성들이\n가장 많이 찾은 영양제에요!"
-        titleLabel.numberOfLines = 2
+        titleLabel.text = "20대 여성들이 선호해요!"
+        titleLabel.numberOfLines = 1
     }
     
     private func setCollectionView() {
@@ -55,9 +55,10 @@ extension AgeTVC {
     
     private func setData() {
         productList.append(contentsOf: [
-            ProductDataModel(productImage: "product1", productName: "듀오락 바이탈리티", description: "일반 유산균", ranking: 4.5),
-            ProductDataModel(productImage: "product3", productName: "세노비스 바이오틱스", description: "일반 유산균", ranking: 2.5),
-            ProductDataModel(productImage: "product4", productName: "블랙모어스", description: "프로바이오틱스", ranking: 3.7)
+            ProductDataModel(productImage: "image1", productName: "블랙모어스", description: "프로바이오틱스", ranking: 4.5),
+            ProductDataModel(productImage: "image2", productName: "GNC 철분 18", description: "엽산/철분제", ranking: 2.5),
+            ProductDataModel(productImage: "image3", productName: "얼라이브 데일리", description: "종합 비타민", ranking: 3.7),
+            ProductDataModel(productImage: "image4", productName: "종근당 유산균", description: "프로바이오틱스", ranking: 4.2)
         ])
     }
 }
@@ -65,8 +66,7 @@ extension AgeTVC {
 extension AgeTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = (collectionView.frame.width - 28 - 60) / 2
-        let cellHeight = collectionView.frame.height - 21
-        return CGSize(width: cellWidth, height: cellHeight)
+        return CGSize(width: cellWidth, height: 194)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

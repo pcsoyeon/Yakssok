@@ -39,15 +39,16 @@ extension SituationTVC {
     private func initUI() {
         contentView.backgroundColor = .mainBackground
         
-        titleLabel.text = "배가 더부룩할 때\n먹으면 좋은 제품이에요!"
-        titleLabel.numberOfLines = 2
+        titleLabel.text = "배가 더부룩할 때 좋아요!"
+        titleLabel.numberOfLines = 1
     }
     
     private func setData() {
         productList.append(contentsOf: [
-            ProductDataModel(productImage: "product2", productName: "듀오락 바이탈리티", description: "일반 유산균", ranking: 4.5),
-            ProductDataModel(productImage: "product5", productName: "세노비스 바이오틱스", description: "일반 유산균", ranking: 2.5),
-            ProductDataModel(productImage: "product4", productName: "블랙모어스", description: "프로바이오틱스", ranking: 3.7)
+            ProductDataModel(productImage: "image5", productName: "듀오락 바이탈리티", description: "일반 유산균", ranking: 4.5),
+            ProductDataModel(productImage: "image6", productName: "세노비스 바이오틱스", description: "일반 유산균", ranking: 2.5),
+            ProductDataModel(productImage: "image7", productName: "센트롬 멀티 구미", description: "종합 영양제", ranking: 3.7),
+            ProductDataModel(productImage: "image8", productName: "블랙모어스 플러스 면역", description: "면역 케어", ranking: 3.7)
         ])
     }
     

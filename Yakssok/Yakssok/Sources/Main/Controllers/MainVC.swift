@@ -28,7 +28,6 @@ class MainVC: UIViewController {
         initUI()
         setTableView()
     }
-    
 }
 
 extension MainVC {
@@ -44,8 +43,7 @@ extension MainVC {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
-        mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        mainTableView.separatorColor = .systemGray5
+        mainTableView.separatorStyle = .none
         mainTableView.showsVerticalScrollIndicator = false
         
         mainTableView.register(UINib(nibName: AgeTVC.identifier, bundle: nil), forCellReuseIdentifier: AgeTVC.identifier)
@@ -59,26 +57,26 @@ extension MainVC {
 extension MainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 304
+            return 290
         } else {
-            return 420
+            return 500
         }
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerView = Bundle.main.loadNibNamed("MainHeaderView", owner: self, options: nil)?.last as! UIView
-//        return headerView
-        
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MainHeaderView") as! MainHeaderView
-        return header
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 161
+            return 180
         } else {
             return 0
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MainHeaderView") as! MainHeaderView
+            return headerView
+        }
+        return nil
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -37,7 +37,6 @@ extension ProductTVC {
     private func initUI() {
         contentView.backgroundColor = .mainBackground
         
-        productImageView.backgroundColor = .subBlue
         productImageView.layer.cornerRadius = 20
         productImageView.layer.masksToBounds = true
         
