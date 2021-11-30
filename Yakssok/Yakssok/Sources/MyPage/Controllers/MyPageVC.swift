@@ -43,6 +43,9 @@ extension MyPageVC {
         myTableView.backgroundColor = .mainBackground
         
         myTableView.register(UINib(nibName: MyPageTVC.identifier, bundle: nil), forCellReuseIdentifier: MyPageTVC.identifier)
+        
+        let headerNib = UINib(nibName: "MyPageHeaderView", bundle: nil)
+        myTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "MyPageHeaderView")
     }
     
     private func setData() {
@@ -75,7 +78,7 @@ extension MyPageVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = Bundle.main.loadNibNamed("MyPageHeaderView", owner: self, options: nil)?.last as! UIView
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MyPageHeaderView") as! MyPageHeaderView
         return headerView
     }
 }

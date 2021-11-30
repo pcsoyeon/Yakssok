@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyPageHeaderView: UIView {
+class MyPageHeaderView: UITableViewHeaderFooterView {
     
     // MARK: - UI
     
@@ -15,12 +15,13 @@ class MyPageHeaderView: UIView {
     
     // MARK: - Initializers
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+        guard let text = self.titleLabel.text else { return }
+        let attributeString = NSMutableAttributedString(string: text)
+        let font = UIFont.boldSystemFont(ofSize: 23)
+        attributeString.addAttribute(.font, value: font, range: (text as NSString).range(of: "이지"))
+        self.titleLabel.attributedText = attributeString
     }
 }
