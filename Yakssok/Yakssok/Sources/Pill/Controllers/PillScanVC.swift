@@ -112,7 +112,7 @@ extension PillScanVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
 
 extension PillScanVC {
     private func setLottieAnimation() {
-        let animationView = AnimationView(name:"searching")
+        let animationView = AnimationView(name:"loading")
         animationView.contentMode = .scaleAspectFit
         
         indicatorView.backgroundColor = .clear
