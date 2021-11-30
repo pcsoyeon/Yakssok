@@ -15,6 +15,12 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var customNavigationView: UIView!
     @IBOutlet weak var productBackView: UIView!
 
+    @IBOutlet weak var likeImageView: UIImageView!
+    
+    // MARK: - Properties
+    
+    private var isFilled: Bool = false
+    
     // MARK: - Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +32,7 @@ class ProductDetailVC: UIViewController {
         super.viewDidLoad()
         
         initUI()
+        setGesture()
     }
 }
 
@@ -36,5 +43,22 @@ extension ProductDetailVC {
         
         backView.backgroundColor = .mainBackground
         view.backgroundColor = .mainBackground
+    }
+    
+    private func setGesture() {
+        likeImageView.isUserInteractionEnabled = true
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedLikeImage))
+        likeImageView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc
+    func tappedLikeImage() {
+        if isFilled {
+            likeImageView.image = UIImage(named: "iconLikeFilled")
+        } else {
+            likeImageView.image = UIImage(named: "iconLike")
+        }
+        isFilled.toggle()
     }
 }
