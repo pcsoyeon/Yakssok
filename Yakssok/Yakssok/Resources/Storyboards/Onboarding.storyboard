@@ -11,6 +11,9 @@
         <array key="SpoqaHanSansNeo-Bold.otf">
             <string>SpoqaHanSansNeo-Bold</string>
         </array>
+        <array key="SpoqaHanSansNeo-Medium.otf">
+            <string>SpoqaHanSansNeo-Medium</string>
+        </array>
         <array key="SpoqaHanSansNeo-Regular.otf">
             <string>SpoqaHanSansNeo-Regular</string>
         </array>
@@ -59,11 +62,10 @@
                                     <constraint firstAttribute="height" constant="51" id="5aR-SU-tto"/>
                                     <constraint firstAttribute="width" constant="226" id="gZE-cZ-b8m"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="다음">
-                                    <fontDescription key="titleFontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="15"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다음"/>
                                 <connections>
                                     <action selector="touchUpNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MhE-Uz-fr7"/>
                                 </connections>
@@ -106,7 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guideImage" translatesAutoresizingMaskIntoConstraints="NO" id="5Ag-Ih-POT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgGuide" translatesAutoresizingMaskIntoConstraints="NO" id="5Ag-Ih-POT">
                                 <rect key="frame" x="57" y="271" width="300" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Y1b-wX-jKQ"/>
@@ -141,9 +143,10 @@
                                     <constraint firstAttribute="height" constant="51" id="KdJ-EA-O5l"/>
                                     <constraint firstAttribute="width" constant="226" id="pIb-tL-d0Z"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="다음"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다음"/>
                                 <connections>
                                     <action selector="touchUpNextButton:" destination="TM2-b6-3iH" eventType="touchUpInside" id="v34-KH-X2N"/>
                                 </connections>
@@ -184,7 +187,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="characterMsgLine" translatesAutoresizingMaskIntoConstraints="NO" id="zcU-DF-YQJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMsg" translatesAutoresizingMaskIntoConstraints="NO" id="zcU-DF-YQJ">
                                 <rect key="frame" x="74.5" y="259" width="265" height="157"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="265" id="aKc-1z-wPs"/>
@@ -219,9 +222,10 @@
                                     <constraint firstAttribute="width" constant="226" id="Ze5-VG-qF2"/>
                                     <constraint firstAttribute="height" constant="51" id="qFy-dN-WhG"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="다음"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다음"/>
                                 <connections>
                                     <action selector="touchUpNextButton:" destination="WiN-NB-V6x" eventType="touchUpInside" id="2SZ-Pm-Zgq"/>
                                 </connections>
@@ -275,8 +279,8 @@
     </scenes>
     <resources>
         <image name="character" width="300" height="300"/>
-        <image name="characterMsgLine" width="225" height="133.5"/>
-        <image name="guideImage" width="253.5" height="116"/>
+        <image name="imgGuide" width="253.5" height="116"/>
+        <image name="imgMsg" width="265" height="157.5"/>
         <image name="indicator1" width="40" height="7"/>
         <image name="indicator2" width="39.5" height="7"/>
         <image name="indicator3" width="39" height="7"/>

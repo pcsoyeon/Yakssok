@@ -39,12 +39,12 @@
                                 <rect key="frame" x="0.0" y="110" width="414" height="710"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWI-bW-pfu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="707.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="733"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-uy-FBL">
                                                 <rect key="frame" x="118.5" y="23" width="177" height="151"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product1" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-Uj-dJD">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-Uj-dJD">
                                                         <rect key="frame" x="16" y="14" width="145" height="123"/>
                                                     </imageView>
                                                 </subviews>
@@ -59,14 +59,14 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로바이오틱스 | (주)한국이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vh-PS-TO8">
-                                                <rect key="frame" x="30" y="203" width="199" height="20.5"/>
-                                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="16"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="30" y="203" width="201" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="16"/>
+                                                <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="블랙모어스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exK-ur-mUa">
                                                 <rect key="frame" x="30" y="229.5" width="83" height="23"/>
-                                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -74,83 +74,93 @@
                                                 <rect key="frame" x="30" y="260.5" width="119" height="24"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-Ye-K19">
-                                                <rect key="frame" x="158" y="261" width="26" height="23"/>
-                                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="18"/>
+                                                <rect key="frame" x="158" y="261" width="26.5" height="23"/>
+                                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZX-Wf-CcN">
-                                                <rect key="frame" x="0.0" y="315.5" width="414" height="1"/>
+                                                <rect key="frame" x="0.0" y="341" width="414" height="1"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Mo3-Bm-5VC"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="복용대상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-tP-y2B">
-                                                <rect key="frame" x="30" y="353.5" width="59" height="20.5"/>
+                                                <rect key="frame" x="30" y="379" width="59" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장이 자주 꼬이거나 속이 안좋은 사람들" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hol-g1-2IK">
-                                                <rect key="frame" x="30" y="384" width="238" height="19"/>
+                                                <rect key="frame" x="30" y="409.5" width="238" height="19"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="복용법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95u-02-zg9">
-                                                <rect key="frame" x="30" y="428" width="44.5" height="20.5"/>
+                                                <rect key="frame" x="30" y="453.5" width="44.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1매 8시간마다 2정씩 복용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEM-vn-2cb">
-                                                <rect key="frame" x="30" y="458.5" width="161.5" height="19"/>
+                                                <rect key="frame" x="30" y="484" width="161.5" height="19"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주의사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htN-4d-R6c">
-                                                <rect key="frame" x="30" y="502.5" width="59" height="20.5"/>
+                                                <rect key="frame" x="30" y="528" width="59" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="철분제와 함께 섭취 금지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cC-JS-1pJ">
-                                                <rect key="frame" x="30" y="533" width="148.5" height="19"/>
+                                                <rect key="frame" x="30" y="558.5" width="148.5" height="19"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="5xL-rs-tVu">
-                                                <rect key="frame" x="320" y="254.5" width="64" height="36"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconLike" translatesAutoresizingMaskIntoConstraints="NO" id="5xL-rs-tVu">
+                                                <rect key="frame" x="320" y="280" width="64" height="36"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHashTag1" translatesAutoresizingMaskIntoConstraints="NO" id="QYY-my-Xp5">
+                                                <rect key="frame" x="30" y="296.5" width="45" height="20"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHashTag2" translatesAutoresizingMaskIntoConstraints="NO" id="GFf-Vj-IA7">
+                                                <rect key="frame" x="80" y="296.5" width="45" height="20"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="5Vh-PS-TO8" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="02N-o5-KYr"/>
                                             <constraint firstItem="exK-ur-mUa" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="64l-TB-gkc"/>
+                                            <constraint firstItem="GFf-Vj-IA7" firstAttribute="leading" secondItem="QYY-my-Xp5" secondAttribute="trailing" constant="5" id="6yV-7V-Pr5"/>
                                             <constraint firstItem="hrn-uy-FBL" firstAttribute="centerX" secondItem="kWI-bW-pfu" secondAttribute="centerX" id="9Jz-mD-EFh"/>
                                             <constraint firstItem="Zcl-Ye-K19" firstAttribute="centerY" secondItem="QUC-DV-j7f" secondAttribute="centerY" id="AiQ-OW-VIu"/>
                                             <constraint firstItem="exK-ur-mUa" firstAttribute="top" secondItem="5Vh-PS-TO8" secondAttribute="bottom" constant="6" id="Az5-nA-ibn"/>
                                             <constraint firstItem="PEM-vn-2cb" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="CeU-iP-cVj"/>
                                             <constraint firstItem="95u-02-zg9" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="GEb-Ne-T8l"/>
+                                            <constraint firstItem="QYY-my-Xp5" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="Gzy-t2-YfV"/>
                                             <constraint firstItem="95u-02-zg9" firstAttribute="top" secondItem="hol-g1-2IK" secondAttribute="bottom" constant="25" id="LGq-lo-dpK"/>
                                             <constraint firstAttribute="trailing" secondItem="vZX-Wf-CcN" secondAttribute="trailing" id="Li5-RX-hGY"/>
                                             <constraint firstItem="PEM-vn-2cb" firstAttribute="top" secondItem="95u-02-zg9" secondAttribute="bottom" constant="10" id="MDX-tl-clC"/>
                                             <constraint firstItem="vZX-Wf-CcN" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" id="NS9-JA-MEu"/>
                                             <constraint firstItem="5Vh-PS-TO8" firstAttribute="top" secondItem="hrn-uy-FBL" secondAttribute="bottom" constant="29" id="Nsv-fA-3df"/>
-                                            <constraint firstItem="5xL-rs-tVu" firstAttribute="centerY" secondItem="QUC-DV-j7f" secondAttribute="centerY" id="Okf-yX-foe"/>
                                             <constraint firstItem="vZX-Wf-CcN" firstAttribute="top" secondItem="5xL-rs-tVu" secondAttribute="bottom" constant="25" id="Q7t-tO-az8"/>
                                             <constraint firstItem="hrn-uy-FBL" firstAttribute="top" secondItem="kWI-bW-pfu" secondAttribute="top" constant="23" id="Qfm-tu-flC"/>
                                             <constraint firstItem="5cC-JS-1pJ" firstAttribute="top" secondItem="htN-4d-R6c" secondAttribute="bottom" constant="10" id="QzH-jc-RoD"/>
                                             <constraint firstItem="htN-4d-R6c" firstAttribute="top" secondItem="PEM-vn-2cb" secondAttribute="bottom" constant="25" id="RB9-Ou-maS"/>
                                             <constraint firstItem="5cC-JS-1pJ" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="hsO-zs-LYb"/>
+                                            <constraint firstItem="5xL-rs-tVu" firstAttribute="top" secondItem="kWI-bW-pfu" secondAttribute="top" constant="280" id="jVh-fC-yax"/>
                                             <constraint firstItem="Zcl-Ye-K19" firstAttribute="leading" secondItem="QUC-DV-j7f" secondAttribute="trailing" constant="9" id="lxS-cA-LNh"/>
                                             <constraint firstItem="QUC-DV-j7f" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="m4V-AN-OM8"/>
                                             <constraint firstItem="hol-g1-2IK" firstAttribute="top" secondItem="3I8-tP-y2B" secondAttribute="bottom" constant="10" id="mBE-i2-xXa"/>
+                                            <constraint firstItem="QYY-my-Xp5" firstAttribute="top" secondItem="QUC-DV-j7f" secondAttribute="bottom" constant="12" id="mlx-iq-gzh"/>
                                             <constraint firstItem="htN-4d-R6c" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="ng3-5r-V6K"/>
                                             <constraint firstItem="QUC-DV-j7f" firstAttribute="top" secondItem="exK-ur-mUa" secondAttribute="bottom" constant="8" id="rAF-Ug-JAK"/>
+                                            <constraint firstItem="GFf-Vj-IA7" firstAttribute="centerY" secondItem="QYY-my-Xp5" secondAttribute="centerY" id="rqS-12-0uy"/>
                                             <constraint firstAttribute="trailing" secondItem="5xL-rs-tVu" secondAttribute="trailing" constant="30" id="sg5-a0-7qx"/>
                                             <constraint firstAttribute="bottom" secondItem="5cC-JS-1pJ" secondAttribute="bottom" constant="155.5" id="sw5-lo-Mpq"/>
                                             <constraint firstItem="3I8-tP-y2B" firstAttribute="leading" secondItem="kWI-bW-pfu" secondAttribute="leading" constant="30" id="uav-ba-IVK"/>
@@ -188,6 +198,7 @@
                     <connections>
                         <outlet property="backView" destination="kWI-bW-pfu" id="4Y0-eD-YjE"/>
                         <outlet property="customNavigationView" destination="0hP-7h-jKg" id="n9C-nk-UUd"/>
+                        <outlet property="likeImageView" destination="5xL-rs-tVu" id="nPb-2H-9WO"/>
                         <outlet property="productBackView" destination="hrn-uy-FBL" id="lCN-Df-cqO"/>
                     </connections>
                 </viewController>
@@ -197,8 +208,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="like" width="64" height="36"/>
-        <image name="product1" width="120" height="106"/>
+        <image name="iconHashTag1" width="45" height="20"/>
+        <image name="iconHashTag2" width="45" height="20"/>
+        <image name="iconLike" width="64" height="36"/>
+        <image name="image1" width="120" height="106"/>
         <image name="ranking" width="119" height="24"/>
         <namedColor name="subBlue">
             <color red="0.93699997663497925" green="0.94900000095367432" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
