@@ -145,7 +145,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNS-Yh-9Bj">
-                                        <rect key="frame" x="82.5" y="772" width="249" height="72"/>
+                                        <rect key="frame" x="83.5" y="774" width="247" height="70"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="btnConfirm"/>
                                     </button>
@@ -200,7 +200,7 @@
                                 <rect key="frame" x="65.5" y="120" width="283" height="44"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awe-zH-2x5">
-                                <rect key="frame" x="78.5" y="660" width="257" height="88"/>
+                                <rect key="frame" x="83.5" y="660" width="247" height="70"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnStop"/>
                                 <connections>
@@ -249,7 +249,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="toA-bo-RaD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgProducts" translatesAutoresizingMaskIntoConstraints="NO" id="toA-bo-RaD">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pae-eS-Hpz">
@@ -304,11 +304,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgProduct" translatesAutoresizingMaskIntoConstraints="NO" id="tpo-a4-tkL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsk-hY-vrV">
-                                <rect key="frame" x="82.5" y="738" width="249" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="249" id="VDr-0o-OSh"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsk-hY-vrV">
+                                <rect key="frame" x="75" y="740" width="264" height="70"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnConfirm"/>
                                 <connections>
@@ -329,9 +326,11 @@
                         <constraints>
                             <constraint firstItem="Cn2-5f-4IV" firstAttribute="trailing" secondItem="xL0-g0-xuf" secondAttribute="trailing" constant="20" id="Azx-ta-8i4"/>
                             <constraint firstItem="tpo-a4-tkL" firstAttribute="leading" secondItem="Cn2-5f-4IV" secondAttribute="leading" id="GKT-j6-L8x"/>
+                            <constraint firstItem="wsk-hY-vrV" firstAttribute="leading" secondItem="Cn2-5f-4IV" secondAttribute="leading" constant="75" id="QGe-2T-9lR"/>
                             <constraint firstItem="Cn2-5f-4IV" firstAttribute="trailing" secondItem="tpo-a4-tkL" secondAttribute="trailing" id="SAo-79-Gzf"/>
                             <constraint firstItem="xL0-g0-xuf" firstAttribute="top" secondItem="Cn2-5f-4IV" secondAttribute="top" constant="50" id="fyN-Oa-p3B"/>
                             <constraint firstItem="Cn2-5f-4IV" firstAttribute="bottom" secondItem="wsk-hY-vrV" secondAttribute="bottom" constant="52" id="n2h-KI-79l"/>
+                            <constraint firstItem="Cn2-5f-4IV" firstAttribute="trailing" secondItem="wsk-hY-vrV" secondAttribute="trailing" constant="75" id="nwh-m6-r0X"/>
                             <constraint firstItem="tpo-a4-tkL" firstAttribute="top" secondItem="Oae-Yp-OMR" secondAttribute="top" id="qgu-Wl-n9w"/>
                             <constraint firstAttribute="bottom" secondItem="tpo-a4-tkL" secondAttribute="bottom" id="ras-OV-1tA"/>
                             <constraint firstItem="wsk-hY-vrV" firstAttribute="centerX" secondItem="tpo-a4-tkL" secondAttribute="centerX" id="z2m-T8-7c3"/>
@@ -353,10 +352,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgProduct" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-ov-dWW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mod-iG-hld">
-                                <rect key="frame" x="82.5" y="738" width="249" height="72"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mod-iG-hld">
+                                <rect key="frame" x="82.5" y="740" width="249" height="70"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="btnConfirm"/>
+                                <buttonConfiguration key="configuration" style="plain" image="btnDetail"/>
                                 <connections>
                                     <action selector="touchUpConfirmButton:" destination="zeQ-Lr-aj2" eventType="touchUpInside" id="Tn4-Bq-G9X"/>
                                 </connections>
@@ -404,8 +403,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgProduct" translatesAutoresizingMaskIntoConstraints="NO" id="6EY-ad-eMu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij4-Py-I0M">
-                                <rect key="frame" x="82" y="738" width="250" height="72"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij4-Py-I0M">
+                                <rect key="frame" x="83.5" y="740" width="247" height="70"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnGoToHome"/>
                                 <connections>
@@ -436,15 +435,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="375" height="812"/>
         <image name="bgProduct" width="375" height="812"/>
+        <image name="bgProducts" width="375" height="812"/>
         <image name="btnArScan" width="249" height="51"/>
         <image name="btnBack" width="8" height="12.5"/>
         <image name="btnClose" width="15.5" height="15.5"/>
-        <image name="btnConfirm" width="225" height="58"/>
-        <image name="btnGoToHome" width="226" height="58"/>
+        <image name="btnConfirm" width="223" height="56"/>
+        <image name="btnDetail" width="225" height="56"/>
+        <image name="btnGoToHome" width="223" height="56"/>
         <image name="btnNext" width="8" height="12.5"/>
-        <image name="btnStop" width="233" height="74"/>
+        <image name="btnStop" width="223" height="56"/>
         <image name="imgDialogTxt" width="333.5" height="110"/>
         <image name="imgInfo" width="276" height="37"/>
         <image name="imgMessage" width="256" height="228"/>

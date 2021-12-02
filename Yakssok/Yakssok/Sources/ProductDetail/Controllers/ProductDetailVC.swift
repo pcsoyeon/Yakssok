@@ -55,9 +55,9 @@ extension ProductDetailVC {
     @objc
     func tappedLikeImage() {
         if isFilled {
-            likeImageView.image = UIImage(named: "iconLikeFilled")
+            likeImageView.image = UIImage(named: "icnLikeFilled")
         } else {
-            likeImageView.image = UIImage(named: "iconLike")
+            likeImageView.image = UIImage(named: "icnLike")
         }
         isFilled.toggle()
     }

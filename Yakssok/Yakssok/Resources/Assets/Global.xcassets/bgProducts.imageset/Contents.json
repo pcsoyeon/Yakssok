@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "iPhone 13 mini - 63.png",
+      "filename" : "ar_stand-result.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "iPhone 13 mini - 63@2x.png",
+      "filename" : "ar_stand-result@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "iPhone 13 mini - 63@3x.png",
+      "filename" : "ar_stand-result@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

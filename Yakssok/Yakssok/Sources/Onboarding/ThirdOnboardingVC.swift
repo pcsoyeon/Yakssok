@@ -11,6 +11,8 @@ class ThirdOnboardingVC: UIViewController {
     
     // MARK: - IB Outlets
     
+    @IBOutlet weak var customNavigationView: UIView!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var indicatorImageView: UIImageView!
     
@@ -25,6 +27,7 @@ class ThirdOnboardingVC: UIViewController {
         super.viewWillAppear(animated)
         
         self.navigationController?.navigationBar.isHidden = true
+        onboardingNavigationBar(customNavigationBarView: customNavigationView, backButtonIsHidden: false)
     }
 
     // MARK: - Life Cycle

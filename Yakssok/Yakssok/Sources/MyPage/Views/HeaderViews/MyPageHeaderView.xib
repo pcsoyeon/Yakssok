@@ -25,7 +25,7 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYV-0N-y6q">
                     <rect key="frame" x="30" y="44" width="186.5" height="58"/>
-                    <string key="text">이지님
+                    <string key="text">이지님,
 오늘도  건강하세요!</string>
                     <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="23"/>
                     <nil key="textColor"/>

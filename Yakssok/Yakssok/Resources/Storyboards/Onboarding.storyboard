@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -151,6 +152,13 @@
                                     <action selector="touchUpNextButton:" destination="TM2-b6-3iH" eventType="touchUpInside" id="v34-KH-X2N"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ii-ph-ROi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="66"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Vem-ce-alk"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9oo-qn-8KD"/>
                         <color key="backgroundColor" name="mainBackground"/>
@@ -160,14 +168,18 @@
                             <constraint firstItem="iDG-ve-6u8" firstAttribute="leading" secondItem="9oo-qn-8KD" secondAttribute="leading" constant="30" id="Tek-gW-7c7"/>
                             <constraint firstItem="qey-Iy-FqO" firstAttribute="leading" secondItem="9oo-qn-8KD" secondAttribute="leading" constant="30" id="eCK-rR-1wk"/>
                             <constraint firstItem="qey-Iy-FqO" firstAttribute="top" secondItem="5Ag-Ih-POT" secondAttribute="bottom" constant="170" id="hmM-XX-dmb"/>
+                            <constraint firstItem="9oo-qn-8KD" firstAttribute="trailing" secondItem="8ii-ph-ROi" secondAttribute="trailing" id="i0R-Gc-1X9"/>
                             <constraint firstItem="5Ag-Ih-POT" firstAttribute="top" secondItem="9oo-qn-8KD" secondAttribute="top" constant="227" id="iBO-ZL-R7q"/>
                             <constraint firstItem="YZn-eM-qCH" firstAttribute="top" secondItem="iDG-ve-6u8" secondAttribute="bottom" constant="33" id="iew-Bv-a8F"/>
                             <constraint firstItem="9Wz-E5-2Sf" firstAttribute="leading" secondItem="9oo-qn-8KD" secondAttribute="leading" constant="30" id="jNW-9Y-dYc"/>
+                            <constraint firstItem="8ii-ph-ROi" firstAttribute="leading" secondItem="9oo-qn-8KD" secondAttribute="leading" id="olN-dU-hmS"/>
                             <constraint firstItem="9Wz-E5-2Sf" firstAttribute="top" secondItem="qey-Iy-FqO" secondAttribute="bottom" constant="20" id="pWb-67-aSl"/>
+                            <constraint firstItem="8ii-ph-ROi" firstAttribute="top" secondItem="9oo-qn-8KD" secondAttribute="top" id="rAz-67-rTb"/>
                             <constraint firstItem="5Ag-Ih-POT" firstAttribute="centerX" secondItem="9oo-qn-8KD" secondAttribute="centerX" id="uO3-KF-IJb"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customNavigationView" destination="8ii-ph-ROi" id="FLQ-HC-9cD"/>
                         <outlet property="imageView" destination="5Ag-Ih-POT" id="Kp8-r8-OdM"/>
                         <outlet property="indicatorImageView" destination="qey-Iy-FqO" id="83i-t7-Jzn"/>
                         <outlet property="nextButton" destination="YZn-eM-qCH" id="wRd-dF-BJJ"/>
@@ -230,15 +242,25 @@
                                     <action selector="touchUpNextButton:" destination="WiN-NB-V6x" eventType="touchUpInside" id="2SZ-Pm-Zgq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-cI-JRj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="66"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="wtM-LU-40O"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Ze-rk-TBd"/>
                         <color key="backgroundColor" name="mainBackground"/>
                         <constraints>
                             <constraint firstItem="rxF-Rf-uBp" firstAttribute="top" secondItem="JbC-NL-Qd2" secondAttribute="bottom" constant="15" id="0lZ-tg-ufj"/>
                             <constraint firstItem="JbC-NL-Qd2" firstAttribute="leading" secondItem="1Ze-rk-TBd" secondAttribute="leading" constant="30" id="8UZ-Ma-NcP"/>
+                            <constraint firstItem="D5V-cI-JRj" firstAttribute="leading" secondItem="1Ze-rk-TBd" secondAttribute="leading" id="E9J-AN-eUc"/>
+                            <constraint firstItem="D5V-cI-JRj" firstAttribute="top" secondItem="1Ze-rk-TBd" secondAttribute="top" id="HZ6-AG-LcH"/>
                             <constraint firstItem="zcU-DF-YQJ" firstAttribute="centerX" secondItem="1Ze-rk-TBd" secondAttribute="centerX" id="HeP-lx-48U"/>
                             <constraint firstItem="zcU-DF-YQJ" firstAttribute="top" secondItem="1Ze-rk-TBd" secondAttribute="top" constant="215" id="HoQ-Dx-M6M"/>
                             <constraint firstItem="NYT-y4-LGN" firstAttribute="leading" secondItem="1Ze-rk-TBd" secondAttribute="leading" constant="30" id="OGF-M1-r0d"/>
+                            <constraint firstItem="1Ze-rk-TBd" firstAttribute="trailing" secondItem="D5V-cI-JRj" secondAttribute="trailing" id="Whm-Vn-i4D"/>
                             <constraint firstItem="IBc-ia-4wU" firstAttribute="centerX" secondItem="1Ze-rk-TBd" secondAttribute="centerX" id="gpf-jJ-WWe"/>
                             <constraint firstItem="NYT-y4-LGN" firstAttribute="top" secondItem="zcU-DF-YQJ" secondAttribute="bottom" constant="140" id="i9f-FJ-Ayw"/>
                             <constraint firstItem="rxF-Rf-uBp" firstAttribute="leading" secondItem="1Ze-rk-TBd" secondAttribute="leading" constant="30" id="iIQ-tW-aYQ"/>
@@ -247,6 +269,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customNavigationView" destination="D5V-cI-JRj" id="da4-9S-chi"/>
                         <outlet property="imageView" destination="zcU-DF-YQJ" id="dg2-al-ej7"/>
                         <outlet property="indicatorImageView" destination="NYT-y4-LGN" id="azv-G2-6ap"/>
                         <outlet property="nextButton" destination="IBc-ia-4wU" id="4iv-Lh-jGG"/>
@@ -279,7 +302,7 @@
     </scenes>
     <resources>
         <image name="character" width="300" height="300"/>
-        <image name="imgGuide" width="253.5" height="116"/>
+        <image name="imgGuide" width="252" height="116"/>
         <image name="imgMsg" width="265" height="157.5"/>
         <image name="indicator1" width="40" height="7"/>
         <image name="indicator2" width="39.5" height="7"/>
@@ -290,5 +313,8 @@
         <namedColor name="mainBlue">
             <color red="0.45100000500679016" green="0.61599999666213989" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

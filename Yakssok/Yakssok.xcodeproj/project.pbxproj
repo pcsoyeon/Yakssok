@@ -18,6 +18,8 @@
 		92270D692750A2C700364F3A /* StoreScanDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92270D682750A2C700364F3A /* StoreScanDetailVC.swift */; };
 		92270D6B2750A44C00364F3A /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92270D6A2750A44C00364F3A /* UICollectionView+.swift */; };
 		92270D6D2750A4E100364F3A /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92270D6C2750A4E100364F3A /* UITextField+.swift */; };
+		92291C542759187D0012927B /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92291C532759187D0012927B /* UIFont+.swift */; };
+		92291C5627591BA70012927B /* OnboardingNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92291C5527591BA70012927B /* OnboardingNavigationBar.swift */; };
 		9244FE73274F8570007DF858 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244FE72274F8570007DF858 /* AnswerCell.swift */; };
 		92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049D9273DDD5100AF83C2 /* AppDelegate.swift */; };
 		92A049DC273DDD5100AF83C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A049DB273DDD5100AF83C2 /* SceneDelegate.swift */; };
@@ -91,6 +93,8 @@
 		92270D682750A2C700364F3A /* StoreScanDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreScanDetailVC.swift; sourceTree = "<group>"; };
 		92270D6A2750A44C00364F3A /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		92270D6C2750A4E100364F3A /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		92291C532759187D0012927B /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		92291C5527591BA70012927B /* OnboardingNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationBar.swift; sourceTree = "<group>"; };
 		9244FE72274F8570007DF858 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		92A049D6273DDD5100AF83C2 /* Yakssok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yakssok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A049D9273DDD5100AF83C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -370,6 +374,7 @@
 				92270D6A2750A44C00364F3A /* UICollectionView+.swift */,
 				92270D6C2750A4E100364F3A /* UITextField+.swift */,
 				92C781C127561ACE005EFFCD /* UIView+.swift */,
+				92291C532759187D0012927B /* UIFont+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				92D36B3627467D4C0064B59E /* CustomNavigationBar.swift */,
+				92291C5527591BA70012927B /* OnboardingNavigationBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -663,6 +669,7 @@
 				92B619C8273ED90900BE31D1 /* MyPageVC.swift in Sources */,
 				92D9860427440CD8008BEE06 /* ProductDataModel.swift in Sources */,
 				92D36B33274670090064B59E /* PillMessageVC.swift in Sources */,
+				92291C542759187D0012927B /* UIFont+.swift in Sources */,
 				92B619C1273ED3F700BE31D1 /* TabBarController.swift in Sources */,
 				92D9861027441BE1008BEE06 /* MainHeaderView.swift in Sources */,
 				92D98601274400A1008BEE06 /* UIButton+.swift in Sources */,
@@ -682,6 +689,7 @@
 				92B619B2273EC53900BE31D1 /* FirstOnboardingVC.swift in Sources */,
 				92159C842757F69E0081F20B /* StoreMessageVC.swift in Sources */,
 				92D36B5A2746C7590064B59E /* MyPageHeaderView.swift in Sources */,
+				92291C5627591BA70012927B /* OnboardingNavigationBar.swift in Sources */,
 				92F3ED412744283700231282 /* StoreVC.swift in Sources */,
 				92B619CA273EDD7A00BE31D1 /* PopUpVC.swift in Sources */,
 				92B619B6273EC56A00BE31D1 /* ThirdOnboardingVC.swift in Sources */,

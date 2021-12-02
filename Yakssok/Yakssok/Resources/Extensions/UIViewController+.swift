@@ -45,4 +45,20 @@ extension UIViewController {
         
         setupStatusBar(.mainBackground)
     }
+    
+    func onboardingNavigationBar(customNavigationBarView: UIView, backButtonIsHidden: Bool) {
+        let navigationBar = OnboardingNavigationBar(vc: self, backButtonIsHidden: backButtonIsHidden)
+        
+        customNavigationBarView.addSubview(navigationBar)
+        navigationBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            navigationBar.topAnchor.constraint(equalTo: customNavigationBarView.safeAreaLayoutGuide.topAnchor),
+            navigationBar.leadingAnchor.constraint(equalTo: customNavigationBarView.safeAreaLayoutGuide.leadingAnchor),
+            navigationBar.trailingAnchor.constraint(equalTo: customNavigationBarView.safeAreaLayoutGuide.trailingAnchor),
+            navigationBar.bottomAnchor.constraint(equalTo: customNavigationBarView.bottomAnchor)
+        ])
+        
+        setupStatusBar(.mainBackground)
+    }
 }
