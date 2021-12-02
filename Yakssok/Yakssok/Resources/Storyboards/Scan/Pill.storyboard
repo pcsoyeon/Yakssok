@@ -38,7 +38,7 @@
                                     <action selector="touchUpXbutton:" destination="o8a-sM-Ejr" eventType="touchUpInside" id="D5I-ND-5DR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="AEx-ie-js7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgEllipse" translatesAutoresizingMaskIntoConstraints="NO" id="AEx-ie-js7">
                                 <rect key="frame" x="59.5" y="326" width="295" height="219"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="219" id="FqJ-Qg-g4Z"/>
@@ -48,7 +48,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="characterSmall" translatesAutoresizingMaskIntoConstraints="NO" id="Ggj-mY-3FK">
                                 <rect key="frame" x="193" y="216" width="206" height="206"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dialog" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-Uv-zfN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgDialog" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-Uv-zfN">
                                 <rect key="frame" x="40.5" y="670" width="333.5" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알약을 점선 안에 배치해줘!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzE-5G-fDc">
@@ -126,7 +126,7 @@
                                     <constraint firstAttribute="width" constant="283" id="NjU-eO-SKd"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="zzH-mq-kev">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgEllipse" translatesAutoresizingMaskIntoConstraints="NO" id="zzH-mq-kev">
                                 <rect key="frame" x="59.5" y="291" width="295" height="219"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="219" id="ol8-uu-q7h"/>
@@ -189,11 +189,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gU9-vR-lL5">
-                                <rect key="frame" x="19.5" y="243.5" width="375" height="419"/>
+                                <rect key="frame" x="57" y="303" width="300" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Lkf-xI-unC"/>
-                                    <constraint firstAttribute="height" constant="419" id="mOU-1G-PBN"/>
+                                    <constraint firstAttribute="width" constant="300" id="Lkf-xI-unC"/>
+                                    <constraint firstAttribute="height" constant="300" id="mOU-1G-PBN"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -282,6 +282,7 @@
                     </view>
                     <connections>
                         <outlet property="confirmButton" destination="hB9-ac-FWY" id="FiA-W2-YDS"/>
+                        <outlet property="msgImageView" destination="843-ro-nah" id="DrX-dB-lDD"/>
                         <outlet property="preView" destination="EqD-Re-c35" id="12l-ym-4Bg"/>
                     </connections>
                 </viewController>
@@ -304,10 +305,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgExclude" translatesAutoresizingMaskIntoConstraints="NO" id="lw3-Tn-cuZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="OoL-rH-r2U">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLine" translatesAutoresizingMaskIntoConstraints="NO" id="OoL-rH-r2U">
                                 <rect key="frame" x="196" y="483" width="22" height="69"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" translatesAutoresizingMaskIntoConstraints="NO" id="BzO-dr-6k9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMessage" translatesAutoresizingMaskIntoConstraints="NO" id="BzO-dr-6k9">
                                 <rect key="frame" x="79" y="255" width="256" height="228"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfS-LS-0n9">
@@ -359,13 +360,13 @@
         <image name="btnGoToHome" width="226" height="58"/>
         <image name="btnStop" width="233" height="74"/>
         <image name="characterSmall" width="206" height="206"/>
-        <image name="dialog" width="333.5" height="110"/>
-        <image name="ellipse" width="297" height="221"/>
         <image name="imgAlert" width="276" height="45"/>
+        <image name="imgDialog" width="333.5" height="110"/>
+        <image name="imgEllipse" width="297" height="221"/>
+        <image name="imgLine" width="22" height="69"/>
+        <image name="imgMessage" width="256" height="228"/>
         <image name="imgMsgTxt" width="249" height="132.5"/>
         <image name="imgSearch" width="283" height="44"/>
-        <image name="line" width="22" height="69"/>
-        <image name="message" width="256" height="228"/>
         <namedColor name="mainBlue">
             <color red="0.45100000500679016" green="0.61599999666213989" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

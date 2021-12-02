@@ -56,11 +56,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWN-h2-Xbi">
-                                <rect key="frame" x="94" y="741.5" width="226" height="51"/>
+                                <rect key="frame" x="70" y="741.5" width="274" height="51"/>
                                 <color key="backgroundColor" name="mainBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="5aR-SU-tto"/>
-                                    <constraint firstAttribute="width" constant="226" id="gZE-cZ-b8m"/>
+                                    <constraint firstAttribute="width" constant="274" id="gZE-cZ-b8m"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,11 +137,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZn-eM-qCH">
-                                <rect key="frame" x="94" y="699.5" width="226" height="51"/>
+                                <rect key="frame" x="70" y="699.5" width="274" height="51"/>
                                 <color key="backgroundColor" name="mainBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="KdJ-EA-O5l"/>
-                                    <constraint firstAttribute="width" constant="226" id="pIb-tL-d0Z"/>
+                                    <constraint firstAttribute="width" constant="274" id="pIb-tL-d0Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,10 +216,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBc-ia-4wU">
-                                <rect key="frame" x="94" y="699.5" width="226" height="51"/>
+                                <rect key="frame" x="70" y="699.5" width="274" height="51"/>
                                 <color key="backgroundColor" name="mainBlue"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="226" id="Ze5-VG-qF2"/>
+                                    <constraint firstAttribute="width" constant="274" id="Ze5-VG-qF2"/>
                                     <constraint firstAttribute="height" constant="51" id="qFy-dN-WhG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="15"/>

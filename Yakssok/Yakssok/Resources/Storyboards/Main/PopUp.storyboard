@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xMark" translatesAutoresizingMaskIntoConstraints="NO" id="ixh-bp-Y8L">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnFloating" translatesAutoresizingMaskIntoConstraints="NO" id="ixh-bp-Y8L">
                                 <rect key="frame" x="175" y="797" width="64" height="64"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selection" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-8o-YyP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnSelect" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-8o-YyP">
                                 <rect key="frame" x="92.5" y="721" width="229" height="51"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06r-lh-cl3">
@@ -86,8 +86,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="selection" width="229" height="51"/>
-        <image name="xMark" width="64" height="64"/>
+        <image name="btnFloating" width="64" height="64"/>
+        <image name="btnSelect" width="229" height="51"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

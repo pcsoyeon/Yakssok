@@ -44,7 +44,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-uy-FBL">
                                                 <rect key="frame" x="118.5" y="23" width="177" height="151"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-Uj-dJD">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product1" translatesAutoresizingMaskIntoConstraints="NO" id="UOF-Uj-dJD">
                                                         <rect key="frame" x="16" y="14" width="145" height="123"/>
                                                     </imageView>
                                                 </subviews>
@@ -70,7 +70,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ranking" translatesAutoresizingMaskIntoConstraints="NO" id="QUC-DV-j7f">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnRanking" translatesAutoresizingMaskIntoConstraints="NO" id="QUC-DV-j7f">
                                                 <rect key="frame" x="30" y="260.5" width="119" height="24"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-Ye-K19">
@@ -125,10 +125,10 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconLike" translatesAutoresizingMaskIntoConstraints="NO" id="5xL-rs-tVu">
                                                 <rect key="frame" x="320" y="280" width="64" height="36"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHashTag1" translatesAutoresizingMaskIntoConstraints="NO" id="QYY-my-Xp5">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnHashTag1" translatesAutoresizingMaskIntoConstraints="NO" id="QYY-my-Xp5">
                                                 <rect key="frame" x="30" y="296.5" width="45" height="20"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHashTag2" translatesAutoresizingMaskIntoConstraints="NO" id="GFf-Vj-IA7">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnHashTag2" translatesAutoresizingMaskIntoConstraints="NO" id="GFf-Vj-IA7">
                                                 <rect key="frame" x="80" y="296.5" width="45" height="20"/>
                                             </imageView>
                                         </subviews>
@@ -208,11 +208,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iconHashTag1" width="45" height="20"/>
-        <image name="iconHashTag2" width="45" height="20"/>
+        <image name="icnHashTag1" width="45" height="20"/>
+        <image name="icnHashTag2" width="45" height="20"/>
+        <image name="icnRanking" width="119" height="24"/>
         <image name="iconLike" width="64" height="36"/>
-        <image name="image1" width="120" height="106"/>
-        <image name="ranking" width="119" height="24"/>
+        <image name="product1" width="120" height="106"/>
         <namedColor name="subBlue">
             <color red="0.93699997663497925" green="0.94900000095367432" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
