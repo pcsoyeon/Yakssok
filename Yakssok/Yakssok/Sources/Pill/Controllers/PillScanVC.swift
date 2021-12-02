@@ -59,10 +59,27 @@ extension PillScanVC {
     
     @objc
     func touchUpView() {
-        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageVC") else { return }
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillScanCompleteVC") else { return }
         self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
+
+// MARK: - Lottie Animations
+
+extension PillScanVC {
+    private func setLottieAnimation() {
+        let animationView = AnimationView(name:"loading")
+        animationView.contentMode = .scaleAspectFit
+        
+        indicatorView.backgroundColor = .clear
+        indicatorView.addSubview(animationView)
+        animationView.frame = indicatorView.bounds
+        
+        animationView.play()
+        animationView.loopMode = .loop
+    }
+}
+
 
 // MARK: - Capture Methods
 
@@ -106,21 +123,5 @@ extension PillScanVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
 //        }
 //        try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
 //    }
-}
-
-// MARK: - Lottie Animations
-
-extension PillScanVC {
-    private func setLottieAnimation() {
-        let animationView = AnimationView(name:"loading")
-        animationView.contentMode = .scaleAspectFit
-        
-        indicatorView.backgroundColor = .clear
-        indicatorView.addSubview(animationView)
-        animationView.frame = indicatorView.bounds
-        
-        animationView.play()
-        animationView.loopMode = .loop
-    }
 }
 

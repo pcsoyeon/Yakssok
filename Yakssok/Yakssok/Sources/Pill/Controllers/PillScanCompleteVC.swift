@@ -17,7 +17,6 @@ class PillScanCompleteVC: UIViewController {
     // MARK: - UI
     
     @IBOutlet weak var preView: UIView!
-    
     @IBOutlet weak var particleView: UIView!
     
     // MARK: - Properties
@@ -34,6 +33,7 @@ class PillScanCompleteVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setGesture()
         setLottieAnimation()
         setAVCapture()
     }
@@ -45,19 +45,34 @@ class PillScanCompleteVC: UIViewController {
     }
 }
 
+// MARK: - Gesture
+
+extension PillScanCompleteVC {
+    private func setGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchUpView))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc
+    private func touchUpView() {
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "PillMessageVC") else { return }
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+}
+
 // MARK: - Lottie Animations
 
 extension PillScanCompleteVC {
     private func setLottieAnimation() {
-        let animationView = AnimationView(name:"loading")
-        animationView.contentMode = .scaleAspectFit
+        let animationView = AnimationView(name:"fireflack")
+        animationView.contentMode = .scaleAspectFill
         
         particleView.backgroundColor = .clear
         particleView.addSubview(animationView)
         animationView.frame = particleView.bounds
         
         animationView.play()
-        animationView.loopMode = .loop
+        animationView.loopMode = .playOnce
     }
 }
 

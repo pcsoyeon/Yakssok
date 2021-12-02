@@ -16,6 +16,7 @@ class PillMessageVC: UIViewController {
     
     @IBOutlet weak var preView: UIView!
     @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var msgImageView: UIImageView!
     
     // MARK: - Properties
     
@@ -32,6 +33,7 @@ class PillMessageVC: UIViewController {
         super.viewDidLoad()
         
         initUI()
+        setAnimation()
         setAVCapture()
     }
     
@@ -53,6 +55,12 @@ extension PillMessageVC {
     private func initUI() {
         confirmButton.layer.cornerRadius = 30
         confirmButton.layer.masksToBounds = true
+    }
+    
+    private func setAnimation() {
+        UIView.animate(withDuration: 3.5, animations: {
+            self.msgImageView.alpha = 0
+        })
     }
 }
 
