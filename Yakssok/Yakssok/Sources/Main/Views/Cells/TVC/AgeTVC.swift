@@ -55,10 +55,10 @@ extension AgeTVC {
     
     private func setData() {
         productList.append(contentsOf: [
-            ProductDataModel(productImage: "image1", productName: "블랙모어스", description: "프로바이오틱스", ranking: 4.5),
-            ProductDataModel(productImage: "image2", productName: "GNC 철분 18", description: "엽산/철분제", ranking: 2.5),
-            ProductDataModel(productImage: "image3", productName: "얼라이브 데일리", description: "종합 비타민", ranking: 3.7),
-            ProductDataModel(productImage: "image4", productName: "종근당 유산균", description: "프로바이오틱스", ranking: 4.2)
+            ProductDataModel(productImage: "product1", productName: "블랙모어스", description: "프로바이오틱스", ranking: 4.5),
+            ProductDataModel(productImage: "product2", productName: "GNC 철분 18", description: "엽산/철분제", ranking: 2.5),
+            ProductDataModel(productImage: "product3", productName: "얼라이브 데일리", description: "종합 비타민", ranking: 3.7),
+            ProductDataModel(productImage: "product4", productName: "종근당 유산균", description: "프로바이오틱스", ranking: 4.2)
         ])
     }
 }

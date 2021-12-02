@@ -28,7 +28,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXB-or-cwr">
                         <rect key="frame" x="0.0" y="0.0" width="144" height="130"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product4" translatesAutoresizingMaskIntoConstraints="NO" id="bng-7p-WN1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image4" translatesAutoresizingMaskIntoConstraints="NO" id="bng-7p-WN1">
                                 <rect key="frame" x="13" y="13" width="118" height="104"/>
                             </imageView>
                         </subviews>
@@ -74,7 +74,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="product4" width="90" height="73"/>
+        <image name="image4" width="123" height="108"/>
         <namedColor name="subBlue">
             <color red="0.93699997663497925" green="0.94900000095367432" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
