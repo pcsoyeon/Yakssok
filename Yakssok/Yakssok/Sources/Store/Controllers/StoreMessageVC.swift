@@ -1,13 +1,13 @@
 //
-//  StoreScanDetailVC.swift
+//  StoreMessageVC.swift
 //  Yakssok
 //
-//  Created by soyeon on 2021/11/26.
+//  Created by soyeon on 2021/12/02.
 //
 
 import UIKit
 
-class StoreScanDetailVC: UIViewController {
+class StoreMessageVC: UIViewController {
 
     // MARK: - Life Cycle
     
@@ -26,7 +26,7 @@ class StoreScanDetailVC: UIViewController {
     }
     
     @IBAction func touchUpConfirmButton(_ sender: Any) {
-        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreMessageVC") else { return }
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreMessageDetailVC") else { return }
         self.navigationController?.pushViewController(dvc, animated: true)
     }
 }

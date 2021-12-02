@@ -32,9 +32,27 @@ class StoreGuideVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setGesture()
         setAVCapture()
     }
 }
+
+// MARK: - Gesture
+
+extension StoreGuideVC {
+    private func setGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchUpView))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc
+    private func touchUpView() {
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreScanVC") else { return }
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+}
+
+// MARK: - AVCapture
 
 extension StoreGuideVC: AVCaptureVideoDataOutputSampleBufferDelegate  {
     private func setAVCapture() {

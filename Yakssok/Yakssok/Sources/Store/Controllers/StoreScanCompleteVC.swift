@@ -10,11 +10,14 @@ import UIKit
 import AVKit
 import Vision
 
+import Lottie
+
 class StoreScanCompleteVC: UIViewController {
     
     // MARK: - UI
     
-    @IBOutlet weak var preView: UIView!
+    @IBOutlet weak var particleView: UIView!
+    @IBOutlet weak var dialogImageView: UIImageView!
     
     // MARK: - Properties
     
@@ -26,26 +29,54 @@ class StoreScanCompleteVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setAVCapture()
+        initUI()
+        setGesture()
+        setLottieAnimation()
     }
 }
 
-extension StoreScanCompleteVC: AVCaptureVideoDataOutputSampleBufferDelegate {
-    private func setAVCapture() {
-        captureSession.sessionPreset = .high
+// MARK: - Custom Methods
+
+extension StoreScanCompleteVC {
+    private func initUI() {
+        dialogImageView.isHidden = true
+    }
+}
+
+
+// MARK: - Gesture
+
+extension StoreScanCompleteVC {
+    private func setGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchUpView))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc
+    func touchUpView() {
+        guard let dvc = self.storyboard?.instantiateViewController(withIdentifier: "StoreScanDetailVC") else { return }
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+}
+
+// MARK: - Lottie Animations
+
+extension StoreScanCompleteVC {
+    private func setLottieAnimation() {
+        let animationView = AnimationView(name:"fireflack")
+        animationView.contentMode = .scaleAspectFill
         
-        guard let captureDevice = AVCaptureDevice.default(for: .video) else { return }
-        guard let input = try? AVCaptureDeviceInput(device: captureDevice) else { return }
-        captureSession.addInput(input)
+        particleView.backgroundColor = .clear
+        particleView.addSubview(animationView)
+        animationView.frame = particleView.bounds
         
-        captureSession.startRunning()
+        animationView.play()
+        animationView.loopMode = .playOnce
         
-        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        preView.layer.addSublayer(previewLayer)
-        previewLayer.frame = preView.bounds
-        
-        let dataOutput = AVCaptureVideoDataOutput()
-        dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
-        captureSession.addOutput(dataOutput)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
+            UIView.animate(withDuration: 5.5, animations: {
+                self.dialogImageView.isHidden = false
+            })
+        }
     }
 }
