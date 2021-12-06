@@ -145,7 +145,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNS-Yh-9Bj">
-                                        <rect key="frame" x="83.5" y="774" width="247" height="70"/>
+                                        <rect key="frame" x="58" y="779" width="298" height="65"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="btnConfirm"/>
                                     </button>
@@ -200,7 +200,7 @@
                                 <rect key="frame" x="65.5" y="120" width="283" height="44"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awe-zH-2x5">
-                                <rect key="frame" x="83.5" y="660" width="247" height="70"/>
+                                <rect key="frame" x="58" y="660" width="298" height="65"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnStop"/>
                                 <connections>
@@ -305,7 +305,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsk-hY-vrV">
-                                <rect key="frame" x="75" y="740" width="264" height="70"/>
+                                <rect key="frame" x="75" y="745" width="264" height="65"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnConfirm"/>
                                 <connections>
@@ -353,7 +353,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mod-iG-hld">
-                                <rect key="frame" x="82.5" y="740" width="249" height="70"/>
+                                <rect key="frame" x="58" y="745" width="298" height="65"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnDetail"/>
                                 <connections>
@@ -440,11 +440,11 @@
         <image name="btnArScan" width="249" height="51"/>
         <image name="btnBack" width="8" height="12.5"/>
         <image name="btnClose" width="15.5" height="15.5"/>
-        <image name="btnConfirm" width="223" height="56"/>
-        <image name="btnDetail" width="225" height="56"/>
+        <image name="btnConfirm" width="274" height="51"/>
+        <image name="btnDetail" width="274" height="51"/>
         <image name="btnGoToHome" width="223" height="56"/>
         <image name="btnNext" width="8" height="12.5"/>
-        <image name="btnStop" width="223" height="56"/>
+        <image name="btnStop" width="274" height="51"/>
         <image name="imgDialogTxt" width="333.5" height="110"/>
         <image name="imgInfo" width="276" height="37"/>
         <image name="imgMessage" width="256" height="228"/>
