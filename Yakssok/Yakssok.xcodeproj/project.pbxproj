@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9214197C275E4A1E00250A4B /* PillDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9214197B275E4A1E00250A4B /* PillDetail.storyboard */; };
+		9214197F275E67C800250A4B /* PillDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9214197E275E67C800250A4B /* PillDetailVC.swift */; };
+		92141983275E6AAF00250A4B /* PillInfoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92141981275E6AAF00250A4B /* PillInfoCVC.swift */; };
+		92141984275E6AAF00250A4B /* PillInfoCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92141982275E6AAF00250A4B /* PillInfoCVC.xib */; };
+		92141988275E6B0600250A4B /* DocInfoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92141986275E6B0600250A4B /* DocInfoCVC.swift */; };
+		92141989275E6B0600250A4B /* DocInfoCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92141987275E6B0600250A4B /* DocInfoCVC.xib */; };
+		9214198E275E772500250A4B /* DocInfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9214198C275E772500250A4B /* DocInfoTVC.swift */; };
+		9214198F275E772500250A4B /* DocInfoTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9214198D275E772500250A4B /* DocInfoTVC.xib */; };
+		92141992275E7A9600250A4B /* DocInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92141991275E7A9600250A4B /* DocInfoDataModel.swift */; };
 		92159C842757F69E0081F20B /* StoreMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92159C832757F69E0081F20B /* StoreMessageVC.swift */; };
 		92159C862757F6AB0081F20B /* StoreMessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92159C852757F6AB0081F20B /* StoreMessageDetailVC.swift */; };
 		92159C8827588BE90081F20B /* Buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92159C8727588BE90081F20B /* Buttons.xcassets */; };
@@ -82,6 +91,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9214197B275E4A1E00250A4B /* PillDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PillDetail.storyboard; sourceTree = "<group>"; };
+		9214197E275E67C800250A4B /* PillDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillDetailVC.swift; sourceTree = "<group>"; };
+		92141981275E6AAF00250A4B /* PillInfoCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillInfoCVC.swift; sourceTree = "<group>"; };
+		92141982275E6AAF00250A4B /* PillInfoCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PillInfoCVC.xib; sourceTree = "<group>"; };
+		92141986275E6B0600250A4B /* DocInfoCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocInfoCVC.swift; sourceTree = "<group>"; };
+		92141987275E6B0600250A4B /* DocInfoCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocInfoCVC.xib; sourceTree = "<group>"; };
+		9214198C275E772500250A4B /* DocInfoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocInfoTVC.swift; sourceTree = "<group>"; };
+		9214198D275E772500250A4B /* DocInfoTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocInfoTVC.xib; sourceTree = "<group>"; };
+		92141991275E7A9600250A4B /* DocInfoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocInfoDataModel.swift; sourceTree = "<group>"; };
 		92159C832757F69E0081F20B /* StoreMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMessageVC.swift; sourceTree = "<group>"; };
 		92159C852757F6AB0081F20B /* StoreMessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMessageDetailVC.swift; sourceTree = "<group>"; };
 		92159C8727588BE90081F20B /* Buttons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Buttons.xcassets; sourceTree = "<group>"; };
@@ -169,6 +187,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9214197D275E4A2400250A4B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				92D36B45274699910064B59E /* ProductDetail.storyboard */,
+				9214197B275E4A1E00250A4B /* PillDetail.storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		92141980275E6A8C00250A4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9214198B275E770900250A4B /* CVC */,
+				9214198A275E770400250A4B /* TVC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9214198A275E770400250A4B /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				9214198C275E772500250A4B /* DocInfoTVC.swift */,
+				9214198D275E772500250A4B /* DocInfoTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		9214198B275E770900250A4B /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				92141981275E6AAF00250A4B /* PillInfoCVC.swift */,
+				92141982275E6AAF00250A4B /* PillInfoCVC.xib */,
+				92141986275E6B0600250A4B /* DocInfoCVC.swift */,
+				92141987275E6B0600250A4B /* DocInfoCVC.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		92141990275E7A8500250A4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92141991275E7A9600250A4B /* DocInfoDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		92270D6E2750A88500364F3A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				92B619BF273ED3D900BE31D1 /* Base */,
-				92D36B47274699D40064B59E /* ProductDetail */,
+				92D36B47274699D40064B59E /* Detail */,
 				92B619BE273ED3D000BE31D1 /* Pill */,
 				92F3ED422744284400231282 /* Store */,
 				92B619C6273ED8C000BE31D1 /* MyPage */,
@@ -273,6 +337,7 @@
 			children = (
 				92A049E4273DDD5200AF83C2 /* LaunchScreen.storyboard */,
 				92A04A01273DE8EC00AF83C2 /* Onboarding.storyboard */,
+				9214197D275E4A2400250A4B /* Detail */,
 				9244FE6D274F7D79007DF858 /* MyPage */,
 				92D36B4E2746C08E0064B59E /* Scan */,
 				92D36B4D2746C0830064B59E /* Main */,
@@ -429,18 +494,21 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		92D36B47274699D40064B59E /* ProductDetail */ = {
+		92D36B47274699D40064B59E /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				92141990275E7A8500250A4B /* Models */,
+				92141980275E6A8C00250A4B /* Views */,
 				92D36B48274699E10064B59E /* Controllers */,
 			);
-			path = ProductDetail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		92D36B48274699E10064B59E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				92D36B432746995C0064B59E /* ProductDetailVC.swift */,
+				9214197E275E67C800250A4B /* PillDetailVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -466,7 +534,6 @@
 		92D36B4D2746C0830064B59E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				92D36B45274699910064B59E /* ProductDetail.storyboard */,
 				92B619BC273ED13D00BE31D1 /* Main.storyboard */,
 				92B0457327423BBC0030B923 /* PopUp.storyboard */,
 			);
@@ -622,6 +689,8 @@
 				92B619AD273EC01400BE31D1 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				92B0456727422B110030B923 /* AgeCVC.xib in Resources */,
 				92D36B42274690330064B59E /* Global.xcassets in Resources */,
+				92141984275E6AAF00250A4B /* PillInfoCVC.xib in Resources */,
+				9214198F275E772500250A4B /* DocInfoTVC.xib in Resources */,
 				92159C8827588BE90081F20B /* Buttons.xcassets in Resources */,
 				92159C8A27588C880081F20B /* Images.xcassets in Resources */,
 				92C781C027560C4B005EFFCD /* loading.json in Resources */,
@@ -636,6 +705,7 @@
 				92D9860E27441BD0008BEE06 /* MainHeaderView.xib in Resources */,
 				92B0456327422AEF0030B923 /* AgeTVC.xib in Resources */,
 				92B619AC273EC01400BE31D1 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				9214197C275E4A1E00250A4B /* PillDetail.storyboard in Resources */,
 				92D36B46274699910064B59E /* ProductDetail.storyboard in Resources */,
 				92D9860827441261008BEE06 /* ProductTVC.xib in Resources */,
 				92D986122744229A008BEE06 /* Pill.storyboard in Resources */,
@@ -643,6 +713,7 @@
 				92D36B542746C30E0064B59E /* MyPageTVC.xib in Resources */,
 				92B619AA273EC01400BE31D1 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				92B619AE273EC01400BE31D1 /* SpoqaHanSansNeo-Thin.otf in Resources */,
+				92141989275E6B0600250A4B /* DocInfoCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +727,7 @@
 				92C781C227561ACE005EFFCD /* UIView+.swift in Sources */,
 				92159C862757F6AB0081F20B /* StoreMessageDetailVC.swift in Sources */,
 				92270D672750A29600364F3A /* StoreScanCompleteVC.swift in Sources */,
+				92141988275E6B0600250A4B /* DocInfoCVC.swift in Sources */,
 				92B0456627422B110030B923 /* AgeCVC.swift in Sources */,
 				92270D692750A2C700364F3A /* StoreScanDetailVC.swift in Sources */,
 				92D36B442746995C0064B59E /* ProductDetailVC.swift in Sources */,
@@ -681,6 +753,7 @@
 				92B619C3273ED4C200BE31D1 /* UIColor+.swift in Sources */,
 				92B619B5273EC56A00BE31D1 /* SecondOnboardingVC.swift in Sources */,
 				92270D6B2750A44C00364F3A /* UICollectionView+.swift in Sources */,
+				92141992275E7A9600250A4B /* DocInfoDataModel.swift in Sources */,
 				92A049DA273DDD5100AF83C2 /* AppDelegate.swift in Sources */,
 				92F3ED44274433B800231282 /* PillGuideVC.swift in Sources */,
 				92270D6D2750A4E100364F3A /* UITextField+.swift in Sources */,
@@ -689,14 +762,17 @@
 				92B619B2273EC53900BE31D1 /* FirstOnboardingVC.swift in Sources */,
 				92159C842757F69E0081F20B /* StoreMessageVC.swift in Sources */,
 				92D36B5A2746C7590064B59E /* MyPageHeaderView.swift in Sources */,
+				92141983275E6AAF00250A4B /* PillInfoCVC.swift in Sources */,
 				92291C5627591BA70012927B /* OnboardingNavigationBar.swift in Sources */,
 				92F3ED412744283700231282 /* StoreVC.swift in Sources */,
 				92B619CA273EDD7A00BE31D1 /* PopUpVC.swift in Sources */,
 				92B619B6273EC56A00BE31D1 /* ThirdOnboardingVC.swift in Sources */,
+				9214198E275E772500250A4B /* DocInfoTVC.swift in Sources */,
 				92D9860727441261008BEE06 /* ProductTVC.swift in Sources */,
 				92D36B532746C30E0064B59E /* MyPageTVC.swift in Sources */,
 				92B0456227422AEF0030B923 /* AgeTVC.swift in Sources */,
 				92A049EF273DDD8500AF83C2 /* SqueezeNet.mlmodel in Sources */,
+				9214197F275E67C800250A4B /* PillDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

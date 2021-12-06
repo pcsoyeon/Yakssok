@@ -240,7 +240,7 @@
                                 <rect key="frame" x="82.5" y="283" width="249" height="133"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y99-7y-bRa">
-                                <rect key="frame" x="354.5" y="94" width="39.5" height="29.5"/>
+                                <rect key="frame" x="364.5" y="94" width="39.5" height="29.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnClose"/>
                                 <connections>
@@ -251,7 +251,7 @@
                         <viewLayoutGuide key="safeArea" id="4qT-IO-mWa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4qT-IO-mWa" firstAttribute="trailing" secondItem="Y99-7y-bRa" secondAttribute="trailing" constant="20" id="3vI-ON-1ie"/>
+                            <constraint firstItem="4qT-IO-mWa" firstAttribute="trailing" secondItem="Y99-7y-bRa" secondAttribute="trailing" constant="10" id="3vI-ON-1ie"/>
                             <constraint firstItem="P7g-gg-csV" firstAttribute="top" secondItem="843-ro-nah" secondAttribute="bottom" constant="86" id="72f-QU-qrp"/>
                             <constraint firstItem="843-ro-nah" firstAttribute="top" secondItem="4qT-IO-mWa" secondAttribute="top" constant="108" id="9Z6-Xk-0Lo"/>
                             <constraint firstItem="EqD-Re-c35" firstAttribute="top" secondItem="ypy-AO-iYn" secondAttribute="top" id="ARF-4l-hrI"/>
@@ -313,7 +313,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SId-gi-gb5">
-                                <rect key="frame" x="354" y="94" width="40" height="30"/>
+                                <rect key="frame" x="364" y="94" width="40" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnClose"/>
                             </button>
@@ -323,7 +323,7 @@
                         <constraints>
                             <constraint firstItem="dzl-0E-dst" firstAttribute="trailing" secondItem="lw3-Tn-cuZ" secondAttribute="trailing" id="32L-fS-osc"/>
                             <constraint firstItem="Lsl-Qc-Whv" firstAttribute="leading" secondItem="dzl-0E-dst" secondAttribute="leading" id="BgU-Pl-uRC"/>
-                            <constraint firstItem="dzl-0E-dst" firstAttribute="trailing" secondItem="SId-gi-gb5" secondAttribute="trailing" constant="20" id="GDO-fn-wuL"/>
+                            <constraint firstItem="dzl-0E-dst" firstAttribute="trailing" secondItem="SId-gi-gb5" secondAttribute="trailing" constant="10" id="GDO-fn-wuL"/>
                             <constraint firstItem="JfS-LS-0n9" firstAttribute="centerX" secondItem="dzl-0E-dst" secondAttribute="centerX" id="GhX-qJ-2KE"/>
                             <constraint firstItem="dzl-0E-dst" firstAttribute="trailing" secondItem="Lsl-Qc-Whv" secondAttribute="trailing" id="HB6-dW-yLi"/>
                             <constraint firstAttribute="bottom" secondItem="lw3-Tn-cuZ" secondAttribute="bottom" id="Jv2-2V-NW8"/>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SpoqaHanSansNeo-Medium.otf">
+            <string>SpoqaHanSansNeo-Medium</string>
+        </array>
+        <array key="SpoqaHanSansNeo-Regular.otf">
+            <string>SpoqaHanSansNeo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PillInfoCVC" customModule="Yakssok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="효능 효과" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-h8-5D9">
+                        <rect key="frame" x="30" y="33" width="66.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25D-bg-mZI">
+                        <rect key="frame" x="30" y="64.5" width="310" height="35.5"/>
+                        <string key="text">월경 전 여러 증상 완화, 월경 전 긴장증, 부종, 경련 요통
+및 두통</string>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="용법 | 용량" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dba-2P-Pyh">
+                        <rect key="frame" x="30" y="134" width="75" height="21.5"/>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-9c-Rec">
+                        <rect key="frame" x="30" y="165.5" width="306" height="70.5"/>
+                        <string key="text">▪성인 및 12세 이상의 소아는 1회 1 ～ 2정을  6시간 
+간격으로 복용
+▪1일 총 용량은 6정 초과 금지
+▪12세 미만의 소아의 경우 해당 약 복용 금지</string>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="복약 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-Dj-Wjv">
+                        <rect key="frame" x="30" y="270" width="66.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIA-3u-grV">
+                        <rect key="frame" x="30" y="301.5" width="299.5" height="53"/>
+                        <string key="text">▪ 충분한 물과 함께 섭취
+▪ 위장장애가 있거나 정기적으로 술을 마시는 경우,  
+황달 등의 이상징후가 나타날 시 전문가와 상의 할 것</string>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주의사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbC-6y-iHT">
+                        <rect key="frame" x="30" y="388.5" width="63" height="21.5"/>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Medium" family="Spoqa Han Sans Neo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKD-3n-Sd5">
+                        <rect key="frame" x="30" y="420" width="306" height="140.5"/>
+                        <string key="text">▪ 약 투여 후 피부 발진 또는 다른 과민 반응이 
+나타날 시 복용 중단
+▪ 해당 약을 복용하는 동안 다른 감기약, 해열 진통제
+섭취 금지
+▪ 해당 약에는 아세트아미노펜이 함유되어 있어 일일
+최대 4000mg을 초과할 경우 간손상 유발
+▪ 바르비탈계 진정제, 심환계 항우울제를 함께 복용할
+경우 간독성을 증가할 수 있으므로 복용 금지</string>
+                        <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="UKD-3n-Sd5" firstAttribute="top" secondItem="qbC-6y-iHT" secondAttribute="bottom" constant="10" id="4Bg-ZR-AEn"/>
+                <constraint firstItem="rHv-h8-5D9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="5gm-6d-J7E"/>
+                <constraint firstItem="UKD-3n-Sd5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="CMm-6b-3bi"/>
+                <constraint firstItem="qbC-6y-iHT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="DbI-DX-UOT"/>
+                <constraint firstItem="sfg-Dj-Wjv" firstAttribute="top" secondItem="5FU-9c-Rec" secondAttribute="bottom" constant="34" id="EtK-Sc-2wT"/>
+                <constraint firstItem="eIA-3u-grV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Im9-Me-SHw"/>
+                <constraint firstItem="Dba-2P-Pyh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="O7O-yq-Edp"/>
+                <constraint firstItem="5FU-9c-Rec" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="YaA-o6-A9x"/>
+                <constraint firstItem="sfg-Dj-Wjv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="aNE-MX-0WA"/>
+                <constraint firstItem="25D-bg-mZI" firstAttribute="top" secondItem="rHv-h8-5D9" secondAttribute="bottom" constant="10" id="cum-jO-4lf"/>
+                <constraint firstItem="rHv-h8-5D9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="33" id="dmk-s1-8Fi"/>
+                <constraint firstItem="5FU-9c-Rec" firstAttribute="top" secondItem="Dba-2P-Pyh" secondAttribute="bottom" constant="10" id="ia8-BK-u25"/>
+                <constraint firstItem="25D-bg-mZI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="oc2-qA-3Pg"/>
+                <constraint firstItem="eIA-3u-grV" firstAttribute="top" secondItem="sfg-Dj-Wjv" secondAttribute="bottom" constant="10" id="pju-Mc-GhB"/>
+                <constraint firstItem="Dba-2P-Pyh" firstAttribute="top" secondItem="25D-bg-mZI" secondAttribute="bottom" constant="34" id="vFM-wh-y3D"/>
+                <constraint firstItem="qbC-6y-iHT" firstAttribute="top" secondItem="eIA-3u-grV" secondAttribute="bottom" constant="34" id="wsW-Tz-p5n"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="114"/>
+        </collectionViewCell>
+    </objects>
+</document>

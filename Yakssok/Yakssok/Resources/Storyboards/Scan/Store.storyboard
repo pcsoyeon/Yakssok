@@ -261,7 +261,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkr-fh-B92">
-                                <rect key="frame" x="354" y="94" width="40" height="30"/>
+                                <rect key="frame" x="364" y="94" width="40" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnClose"/>
                             </button>
@@ -272,7 +272,7 @@
                         <viewLayoutGuide key="safeArea" id="puP-v3-t0r"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="puP-v3-t0r" firstAttribute="trailing" secondItem="vkr-fh-B92" secondAttribute="trailing" constant="20" id="8S7-YF-bev"/>
+                            <constraint firstItem="puP-v3-t0r" firstAttribute="trailing" secondItem="vkr-fh-B92" secondAttribute="trailing" constant="10" id="8S7-YF-bev"/>
                             <constraint firstItem="puP-v3-t0r" firstAttribute="bottom" secondItem="1f3-tG-Ceu" secondAttribute="bottom" constant="84" id="Jgi-S4-Qd1"/>
                             <constraint firstAttribute="bottom" secondItem="toA-bo-RaD" secondAttribute="bottom" id="LMe-ye-hoI"/>
                             <constraint firstItem="toA-bo-RaD" firstAttribute="leading" secondItem="puP-v3-t0r" secondAttribute="leading" id="MUI-XI-GoU"/>
@@ -305,7 +305,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsk-hY-vrV">
-                                <rect key="frame" x="75" y="745" width="264" height="65"/>
+                                <rect key="frame" x="75" y="748" width="264" height="65"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnConfirm"/>
                                 <connections>
@@ -313,7 +313,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL0-g0-xuf">
-                                <rect key="frame" x="354" y="94" width="40" height="30"/>
+                                <rect key="frame" x="364" y="94" width="40" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnClose"/>
                                 <connections>
@@ -324,12 +324,12 @@
                         <viewLayoutGuide key="safeArea" id="Cn2-5f-4IV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Cn2-5f-4IV" firstAttribute="trailing" secondItem="xL0-g0-xuf" secondAttribute="trailing" constant="20" id="Azx-ta-8i4"/>
+                            <constraint firstItem="Cn2-5f-4IV" firstAttribute="trailing" secondItem="xL0-g0-xuf" secondAttribute="trailing" constant="10" id="Azx-ta-8i4"/>
                             <constraint firstItem="tpo-a4-tkL" firstAttribute="leading" secondItem="Cn2-5f-4IV" secondAttribute="leading" id="GKT-j6-L8x"/>
                             <constraint firstItem="wsk-hY-vrV" firstAttribute="leading" secondItem="Cn2-5f-4IV" secondAttribute="leading" constant="75" id="QGe-2T-9lR"/>
                             <constraint firstItem="Cn2-5f-4IV" firstAttribute="trailing" secondItem="tpo-a4-tkL" secondAttribute="trailing" id="SAo-79-Gzf"/>
                             <constraint firstItem="xL0-g0-xuf" firstAttribute="top" secondItem="Cn2-5f-4IV" secondAttribute="top" constant="50" id="fyN-Oa-p3B"/>
-                            <constraint firstItem="Cn2-5f-4IV" firstAttribute="bottom" secondItem="wsk-hY-vrV" secondAttribute="bottom" constant="52" id="n2h-KI-79l"/>
+                            <constraint firstItem="Cn2-5f-4IV" firstAttribute="bottom" secondItem="wsk-hY-vrV" secondAttribute="bottom" constant="49" id="n2h-KI-79l"/>
                             <constraint firstItem="Cn2-5f-4IV" firstAttribute="trailing" secondItem="wsk-hY-vrV" secondAttribute="trailing" constant="75" id="nwh-m6-r0X"/>
                             <constraint firstItem="tpo-a4-tkL" firstAttribute="top" secondItem="Oae-Yp-OMR" secondAttribute="top" id="qgu-Wl-n9w"/>
                             <constraint firstAttribute="bottom" secondItem="tpo-a4-tkL" secondAttribute="bottom" id="ras-OV-1tA"/>
@@ -353,7 +353,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mod-iG-hld">
-                                <rect key="frame" x="58" y="745" width="298" height="65"/>
+                                <rect key="frame" x="58" y="748" width="298" height="65"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnDetail"/>
                                 <connections>
@@ -364,7 +364,7 @@
                                 <rect key="frame" x="82.5" y="283" width="249" height="132.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-xZ-ETT">
-                                <rect key="frame" x="354" y="94" width="40" height="30"/>
+                                <rect key="frame" x="364" y="94" width="40" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="btnClose"/>
                                 <connections>
@@ -379,11 +379,11 @@
                             <constraint firstItem="mod-iG-hld" firstAttribute="centerX" secondItem="eyy-ya-1rm" secondAttribute="centerX" id="B61-aC-Yb6"/>
                             <constraint firstItem="5DJ-eP-ntg" firstAttribute="centerX" secondItem="eyy-ya-1rm" secondAttribute="centerX" id="MMn-38-M91"/>
                             <constraint firstItem="gcL-xZ-ETT" firstAttribute="top" secondItem="eyy-ya-1rm" secondAttribute="top" constant="50" id="VFy-cj-IhR"/>
-                            <constraint firstItem="eyy-ya-1rm" firstAttribute="trailing" secondItem="gcL-xZ-ETT" secondAttribute="trailing" constant="20" id="aYo-ac-cNZ"/>
+                            <constraint firstItem="eyy-ya-1rm" firstAttribute="trailing" secondItem="gcL-xZ-ETT" secondAttribute="trailing" constant="10" id="aYo-ac-cNZ"/>
                             <constraint firstAttribute="bottom" secondItem="gNA-ov-dWW" secondAttribute="bottom" id="cM4-zy-VeZ"/>
                             <constraint firstItem="eyy-ya-1rm" firstAttribute="trailing" secondItem="gNA-ov-dWW" secondAttribute="trailing" id="lMB-i2-PuA"/>
                             <constraint firstItem="gNA-ov-dWW" firstAttribute="top" secondItem="mHA-gl-yW3" secondAttribute="top" id="ocd-uh-C73"/>
-                            <constraint firstItem="eyy-ya-1rm" firstAttribute="bottom" secondItem="mod-iG-hld" secondAttribute="bottom" constant="52" id="wAy-5i-Srn"/>
+                            <constraint firstItem="eyy-ya-1rm" firstAttribute="bottom" secondItem="mod-iG-hld" secondAttribute="bottom" constant="49" id="wAy-5i-Srn"/>
                             <constraint firstItem="5DJ-eP-ntg" firstAttribute="top" secondItem="eyy-ya-1rm" secondAttribute="top" constant="239" id="ziu-BR-vWU"/>
                         </constraints>
                     </view>
@@ -403,27 +403,43 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgProduct" translatesAutoresizingMaskIntoConstraints="NO" id="6EY-ad-eMu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij4-Py-I0M">
-                                <rect key="frame" x="83.5" y="740" width="247" height="70"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="btnGoToHome"/>
-                                <connections>
-                                    <action selector="touchUpConfirmButton:" destination="0Zg-mT-yvq" eventType="touchUpInside" id="7tK-7O-IhV"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMessage" translatesAutoresizingMaskIntoConstraints="NO" id="2DR-PV-ZCa">
                                 <rect key="frame" x="79" y="134" width="256" height="228"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF3-5R-uka">
+                                <rect key="frame" x="364" y="94" width="40" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="btnClose"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnGoToHome" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-lx-azb">
+                                <rect key="frame" x="70" y="762" width="274" height="51"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzr-Mg-yGk">
+                                <rect key="frame" x="106" y="772" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5a-ha-HCD">
+                                <rect key="frame" x="227" y="772" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cgg-vv-PWw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="cgg-vv-PWw" firstAttribute="trailing" secondItem="qF3-5R-uka" secondAttribute="trailing" constant="10" id="2Qd-1f-QVB"/>
+                            <constraint firstItem="cgg-vv-PWw" firstAttribute="trailing" secondItem="V5a-ha-HCD" secondAttribute="trailing" constant="120" id="Gc6-oq-6sC"/>
                             <constraint firstItem="6EY-ad-eMu" firstAttribute="top" secondItem="ola-wS-WnM" secondAttribute="top" id="Msc-Ul-RAn"/>
-                            <constraint firstItem="cgg-vv-PWw" firstAttribute="bottom" secondItem="ij4-Py-I0M" secondAttribute="bottom" constant="52" id="W28-8R-2xT"/>
-                            <constraint firstItem="ij4-Py-I0M" firstAttribute="centerX" secondItem="cgg-vv-PWw" secondAttribute="centerX" id="X6D-hs-aVX"/>
+                            <constraint firstItem="cgg-vv-PWw" firstAttribute="bottom" secondItem="wrM-lx-azb" secondAttribute="bottom" constant="49" id="alp-OW-54i"/>
+                            <constraint firstItem="Kzr-Mg-yGk" firstAttribute="leading" secondItem="cgg-vv-PWw" secondAttribute="leading" constant="106" id="hN9-mh-cMr"/>
                             <constraint firstItem="2DR-PV-ZCa" firstAttribute="top" secondItem="cgg-vv-PWw" secondAttribute="top" constant="90" id="iwF-Cb-9cY"/>
+                            <constraint firstItem="wrM-lx-azb" firstAttribute="centerX" secondItem="cgg-vv-PWw" secondAttribute="centerX" id="jt0-yQ-fgV"/>
                             <constraint firstItem="6EY-ad-eMu" firstAttribute="leading" secondItem="cgg-vv-PWw" secondAttribute="leading" id="ku9-Ld-JAG"/>
+                            <constraint firstItem="cgg-vv-PWw" firstAttribute="bottom" secondItem="Kzr-Mg-yGk" secondAttribute="bottom" constant="59" id="l5O-eD-zL3"/>
                             <constraint firstItem="cgg-vv-PWw" firstAttribute="trailing" secondItem="6EY-ad-eMu" secondAttribute="trailing" id="mLh-07-9KJ"/>
+                            <constraint firstItem="qF3-5R-uka" firstAttribute="top" secondItem="cgg-vv-PWw" secondAttribute="top" constant="50" id="oIm-nq-jhU"/>
+                            <constraint firstItem="cgg-vv-PWw" firstAttribute="bottom" secondItem="V5a-ha-HCD" secondAttribute="bottom" constant="59" id="tBH-XL-6D4"/>
                             <constraint firstAttribute="bottom" secondItem="6EY-ad-eMu" secondAttribute="bottom" id="trE-gi-rQm"/>
                             <constraint firstItem="2DR-PV-ZCa" firstAttribute="centerX" secondItem="cgg-vv-PWw" secondAttribute="centerX" id="wcQ-mu-Dbr"/>
                         </constraints>
@@ -442,7 +458,7 @@
         <image name="btnClose" width="15.5" height="15.5"/>
         <image name="btnConfirm" width="274" height="51"/>
         <image name="btnDetail" width="274" height="51"/>
-        <image name="btnGoToHome" width="223" height="56"/>
+        <image name="btnGoToHome" width="274" height="51"/>
         <image name="btnNext" width="8" height="12.5"/>
         <image name="btnStop" width="274" height="51"/>
         <image name="imgDialogTxt" width="333.5" height="110"/>
