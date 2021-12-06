@@ -65,7 +65,6 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" name="mainBackground"/>
             <constraints>
                 <constraint firstItem="aKe-pW-Ygw" firstAttribute="top" secondItem="WYV-0N-y6q" secondAttribute="bottom" constant="38" id="1OV-pf-53Z"/>
                 <constraint firstItem="dRQ-JW-Y3t" firstAttribute="top" secondItem="lea-QF-MKy" secondAttribute="bottom" constant="7" id="2AJ-Fn-hag"/>
@@ -87,9 +86,6 @@
         </view>
     </objects>
     <resources>
-        <namedColor name="mainBackground">
-            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="mainBlue">
             <color red="0.45100000500679016" green="0.61599999666213989" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
