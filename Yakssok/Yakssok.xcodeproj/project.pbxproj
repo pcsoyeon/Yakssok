@@ -916,6 +916,7 @@
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yakssok/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "약쏙";
 				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 허용해줘.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -945,6 +946,7 @@
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yakssok/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "약쏙";
 				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 허용해줘.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

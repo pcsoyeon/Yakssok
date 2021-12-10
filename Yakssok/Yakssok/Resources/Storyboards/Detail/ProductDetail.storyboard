@@ -228,6 +228,7 @@
                         <outlet property="likeImageView" destination="5xL-rs-tVu" id="nPb-2H-9WO"/>
                         <outlet property="pillInfoLabel" destination="TRr-Dc-ge2" id="wHF-8c-IrS"/>
                         <outlet property="productBackView" destination="hrn-uy-FBL" id="lCN-Df-cqO"/>
+                        <outlet property="productImageView" destination="UOF-Uj-dJD" id="ugb-IS-cl1"/>
                         <outlet property="statusMovedView" destination="ZIN-Hx-haT" id="7uD-LB-lwA"/>
                     </connections>
                 </viewController>

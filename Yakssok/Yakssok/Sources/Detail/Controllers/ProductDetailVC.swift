@@ -14,6 +14,7 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var customNavigationView: UIView!
     @IBOutlet weak var productBackView: UIView!
+    @IBOutlet weak var productImageView: UIImageView!
     
     @IBOutlet weak var likeImageView: UIImageView!
     
@@ -26,6 +27,8 @@ class ProductDetailVC: UIViewController {
     
     private var isFilled: Bool = false
     private var currentIndex = 0
+    
+    var productImage: String?
     
     // MARK: - Life Cycle
     
@@ -51,6 +54,9 @@ extension ProductDetailVC {
         
         backView.backgroundColor = .mainBackground
         view.backgroundColor = .mainBackground
+        
+        productImageView.image = UIImage(named: productImage ?? "product1")
+        productImageView.contentMode = .scaleAspectFit
     }
     
     private func setGesture() {

@@ -21,7 +21,15 @@ class StoreMessageDetailVC: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func touchUpConfirmButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    // MARK: - IB Actions
+    
+    @IBAction func touchUpHomeButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func touchUpDetailButton(_ sender: Any) {
+        guard let dvc = UIStoryboard(name: "ProductDetail", bundle: nil).instantiateViewController(withIdentifier: "ProductDetailVC") as? ProductDetailVC else { return }
+        dvc.productImage = "scanProduct"
+        self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
